@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DraftKings Best Ball ADP Rankings</title>
+    <title>Best Ball ADP Comparison</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -12,93 +12,48 @@
             color: #e0e0e0;
             padding: 20px;
         }
-        h1 {
-            text-align: center;
-            margin-bottom: 8px;
-            color: #fff;
-            font-size: 1.8rem;
-        }
-        .subtitle {
-            text-align: center;
-            color: #888;
-            margin-bottom: 20px;
-            font-size: 0.9rem;
-        }
+        h1 { text-align: center; margin-bottom: 6px; color: #fff; font-size: 1.8rem; }
+        .subtitle { text-align: center; color: #888; margin-bottom: 20px; font-size: 0.9rem; }
         .controls {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 16px;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: flex; gap: 12px; margin-bottom: 16px;
+            flex-wrap: wrap; justify-content: center;
         }
         input[type="text"] {
-            padding: 10px 16px;
-            border-radius: 8px;
-            border: 1px solid #333;
-            background: #1a2634;
-            color: #fff;
-            font-size: 0.95rem;
-            width: 280px;
+            padding: 10px 16px; border-radius: 8px; border: 1px solid #333;
+            background: #1a2634; color: #fff; font-size: 0.95rem; width: 280px;
         }
         input[type="text"]::placeholder { color: #666; }
-        .pos-filters {
-            display: flex;
-            gap: 6px;
-        }
+        .pos-filters { display: flex; gap: 6px; }
         .pos-btn {
-            padding: 8px 16px;
-            border-radius: 8px;
-            border: 1px solid #333;
-            background: #1a2634;
-            color: #aaa;
-            cursor: pointer;
-            font-size: 0.9rem;
-            font-weight: 600;
-            transition: all 0.15s;
+            padding: 8px 16px; border-radius: 8px; border: 1px solid #333;
+            background: #1a2634; color: #aaa; cursor: pointer;
+            font-size: 0.9rem; font-weight: 600; transition: all 0.15s;
         }
         .pos-btn:hover { border-color: #555; color: #fff; }
-        .pos-btn.active { border-color: #4a9eff; color: #4a9eff; background: #1a2634; }
+        .pos-btn.active { border-color: #4a9eff; color: #4a9eff; }
         .pos-btn.active.qb { border-color: #e74c3c; color: #e74c3c; }
         .pos-btn.active.rb { border-color: #2ecc71; color: #2ecc71; }
         .pos-btn.active.wr { border-color: #3498db; color: #3498db; }
         .pos-btn.active.te { border-color: #f39c12; color: #f39c12; }
         .table-container {
-            overflow-x: auto;
-            border-radius: 12px;
-            border: 1px solid #1e2d3d;
+            overflow-x: auto; border-radius: 12px; border: 1px solid #1e2d3d;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.92rem;
-        }
+        table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
         thead th {
-            background: #1a2634;
-            padding: 12px 16px;
-            text-align: left;
-            cursor: pointer;
-            user-select: none;
-            position: sticky;
-            top: 0;
-            white-space: nowrap;
-            border-bottom: 2px solid #2a3a4a;
+            background: #1a2634; padding: 12px 16px; text-align: left;
+            cursor: pointer; user-select: none; position: sticky; top: 0;
+            white-space: nowrap; border-bottom: 2px solid #2a3a4a;
         }
         thead th:hover { color: #4a9eff; }
         thead th .arrow { margin-left: 4px; font-size: 0.7rem; }
-        tbody tr {
-            border-bottom: 1px solid #1e2d3d;
-            transition: background 0.1s;
-        }
+        tbody tr { border-bottom: 1px solid #1e2d3d; transition: background 0.1s; }
         tbody tr:hover { background: #1a2634; }
         td { padding: 10px 16px; white-space: nowrap; }
         .rank-cell { color: #888; font-weight: 600; }
         .name-cell { font-weight: 600; color: #fff; }
         .pos-badge {
-            display: inline-block;
-            padding: 2px 10px;
-            border-radius: 4px;
-            font-weight: 700;
-            font-size: 0.8rem;
+            display: inline-block; padding: 2px 10px; border-radius: 4px;
+            font-weight: 700; font-size: 0.8rem;
         }
         .pos-QB { background: rgba(231,76,60,0.2); color: #e74c3c; }
         .pos-RB { background: rgba(46,204,113,0.2); color: #2ecc71; }
@@ -108,19 +63,37 @@
         .team-cell { color: #999; }
         .no-adp { color: #555; font-style: italic; }
         .count-bar {
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            margin-bottom: 16px;
-            font-size: 0.85rem;
-            color: #888;
+            display: flex; justify-content: center; gap: 16px;
+            margin-bottom: 16px; font-size: 0.85rem; color: #888;
         }
         .count-bar span { font-weight: 600; color: #ccc; }
+        .diff-positive { color: #2ecc71; font-weight: 600; }
+        .diff-negative { color: #e74c3c; font-weight: 600; }
+        .diff-neutral { color: #555; }
+        .source-dk { color: #00c46a; }
+        .source-ud { color: #ff6b35; }
+        .header-dk { color: #00c46a !important; }
+        .header-ud { color: #ff6b35 !important; }
+        .legend {
+            display: flex; justify-content: center; gap: 24px;
+            margin-bottom: 16px; font-size: 0.85rem;
+        }
+        .legend-item { display: flex; align-items: center; gap: 6px; }
+        .legend-dot {
+            width: 10px; height: 10px; border-radius: 50%; display: inline-block;
+        }
+        .legend-dot.dk { background: #00c46a; }
+        .legend-dot.ud { background: #ff6b35; }
     </style>
 </head>
 <body>
-    <h1>DraftKings Best Ball ADP</h1>
-    <p class="subtitle">Pre-Draft Rankings &mdash; 2025 Season</p>
+    <h1>Best Ball ADP Comparison</h1>
+    <p class="subtitle">DraftKings vs Underdog &mdash; 2025 Season</p>
+
+    <div class="legend">
+        <div class="legend-item"><span class="legend-dot dk"></span> DraftKings</div>
+        <div class="legend-item"><span class="legend-dot ud"></span> Underdog</div>
+    </div>
 
     <div class="controls">
         <input type="text" id="search" placeholder="Search player or team...">
@@ -142,9 +115,10 @@
                     <th data-col="rank">Rank <span class="arrow"></span></th>
                     <th data-col="name">Name <span class="arrow"></span></th>
                     <th data-col="pos">Pos <span class="arrow"></span></th>
-                    <th data-col="adp">ADP <span class="arrow"></span></th>
                     <th data-col="team">Team <span class="arrow"></span></th>
-                    <th data-col="id">ID <span class="arrow"></span></th>
+                    <th data-col="dkAdp" class="header-dk">DK ADP <span class="arrow"></span></th>
+                    <th data-col="udAdp" class="header-ud">UD ADP <span class="arrow"></span></th>
+                    <th data-col="diff">Diff <span class="arrow"></span></th>
                 </tr>
             </thead>
             <tbody id="tbody"></tbody>
@@ -153,26 +127,115 @@
 
     <script>
         let players = [];
-        let sortCol = 'adp';
+        let sortCol = 'avgAdp';
         let sortAsc = true;
         let posFilter = 'ALL';
 
-        async function loadData() {
-            const resp = await fetch('DkPreDraftRankings.csv');
-            const text = await resp.text();
+        // Parse CSV handling quoted fields
+        function parseCSV(text) {
+            const rows = [];
             const lines = text.trim().split('\n');
-            const header = lines[0].split(',');
+            for (const line of lines) {
+                const row = [];
+                let inQuote = false;
+                let field = '';
+                for (let i = 0; i < line.length; i++) {
+                    const ch = line[i];
+                    if (ch === '"') {
+                        inQuote = !inQuote;
+                    } else if (ch === ',' && !inQuote) {
+                        row.push(field.trim());
+                        field = '';
+                    } else {
+                        field += ch;
+                    }
+                }
+                row.push(field.trim());
+                rows.push(row);
+            }
+            return rows;
+        }
 
-            for (let i = 1; i < lines.length; i++) {
-                // Handle commas in quoted fields
-                const parts = lines[i].split(',');
-                const id = parts[0];
-                // Name might contain commas if quoted, but this data doesn't have that issue
-                const name = parts[1];
-                const pos = parts[2];
-                const adp = parts[3] ? parseFloat(parts[3]) : null;
-                const team = parts[4] || '';
-                players.push({ id, name, pos, adp, team });
+        // Team abbreviation mapping for Underdog full names
+        const teamAbbrev = {
+            'Atlanta Falcons': 'ATL', 'Buffalo Bills': 'BUF', 'Carolina Panthers': 'CAR',
+            'Chicago Bears': 'CHI', 'Cincinnati Bengals': 'CIN', 'Cleveland Browns': 'CLE',
+            'Dallas Cowboys': 'DAL', 'Denver Broncos': 'DEN', 'Detroit Lions': 'DET',
+            'Green Bay Packers': 'GB', 'Houston Texans': 'HOU', 'Indianapolis Colts': 'IND',
+            'Jacksonville Jaguars': 'JAX', 'Kansas City Chiefs': 'KC',
+            'Las Vegas Raiders': 'LV', 'Los Angeles Chargers': 'LAC',
+            'Los Angeles Rams': 'LAR', 'Miami Dolphins': 'MIA',
+            'Minnesota Vikings': 'MIN', 'New England Patriots': 'NE',
+            'New Orleans Saints': 'NO', 'New York Giants': 'NYG',
+            'New York Jets': 'NYJ', 'Philadelphia Eagles': 'PHI',
+            'Pittsburgh Steelers': 'PIT', 'San Francisco 49ers': 'SF',
+            'Seattle Seahawks': 'SEA', 'Tampa Bay Buccaneers': 'TB',
+            'Tennessee Titans': 'TEN', 'Washington Commanders': 'WAS',
+            'Arizona Cardinals': 'ARI', 'Baltimore Ravens': 'BAL',
+        };
+
+        // Normalize player names for matching
+        function normalizeName(name) {
+            return name.toLowerCase()
+                .replace(/[.']/g, '')
+                .replace(/\s+(jr|sr|ii|iii|iv|v)$/i, '')
+                .replace(/\s+/g, ' ')
+                .trim();
+        }
+
+        async function loadData() {
+            const [dkResp, udResp] = await Promise.all([
+                fetch('DkPreDraftRankings.csv'),
+                fetch('UnderdogRankings.csv')
+            ]);
+            const [dkText, udText] = await Promise.all([dkResp.text(), udResp.text()]);
+
+            // Parse DraftKings: ID, Name, Position, ADP, Team, ...
+            const dkRows = parseCSV(dkText);
+            const dkMap = {};
+            for (let i = 1; i < dkRows.length; i++) {
+                const r = dkRows[i];
+                if (!r[1]) continue;
+                const name = r[1];
+                const pos = r[2];
+                const adp = r[3] ? parseFloat(r[3]) : null;
+                const team = r[4] || '';
+                const key = normalizeName(name);
+                dkMap[key] = { name, pos, adp, team };
+            }
+
+            // Parse Underdog: id, firstName, lastName, adp, projectedPoints, positionRank, slotName, teamName, ...
+            const udRows = parseCSV(udText);
+            const udMap = {};
+            for (let i = 1; i < udRows.length; i++) {
+                const r = udRows[i];
+                if (!r[1]) continue;
+                const firstName = r[1];
+                const lastName = r[2];
+                const name = firstName + ' ' + lastName;
+                const adp = r[3] ? parseFloat(r[3]) : null;
+                const pos = r[6] || '';
+                const teamFull = r[7] || '';
+                const team = teamAbbrev[teamFull] || teamFull;
+                const key = normalizeName(name);
+                udMap[key] = { name, pos, adp, team };
+            }
+
+            // Merge both datasets
+            const allKeys = new Set([...Object.keys(dkMap), ...Object.keys(udMap)]);
+            for (const key of allKeys) {
+                const dk = dkMap[key];
+                const ud = udMap[key];
+                const name = (dk && dk.name) || (ud && ud.name) || key;
+                const pos = (dk && dk.pos) || (ud && ud.pos) || '';
+                const team = (dk && dk.team) || (ud && ud.team) || '';
+                const dkAdp = dk ? dk.adp : null;
+                const udAdp = ud ? ud.adp : null;
+                const diff = (dkAdp !== null && udAdp !== null) ? dkAdp - udAdp : null;
+                const avgAdp = (dkAdp !== null && udAdp !== null)
+                    ? (dkAdp + udAdp) / 2
+                    : (dkAdp !== null ? dkAdp : (udAdp !== null ? udAdp : 9999));
+                players.push({ name, pos, team, dkAdp, udAdp, diff, avgAdp });
             }
 
             render();
@@ -188,16 +251,10 @@
 
             filtered.sort((a, b) => {
                 let va = a[sortCol], vb = b[sortCol];
-                if (sortCol === 'adp') {
-                    // Nulls go to the end
-                    if (va === null && vb === null) return 0;
-                    if (va === null) return 1;
-                    if (vb === null) return -1;
-                }
-                if (sortCol === 'name' || sortCol === 'pos' || sortCol === 'team' || sortCol === 'id') {
-                    va = (va || '').toString().toLowerCase();
-                    vb = (vb || '').toString().toLowerCase();
-                }
+                if (va === null && vb === null) return 0;
+                if (va === null) return 1;
+                if (vb === null) return -1;
+                if (typeof va === 'string') { va = va.toLowerCase(); vb = (vb || '').toLowerCase(); }
                 if (va < vb) return sortAsc ? -1 : 1;
                 if (va > vb) return sortAsc ? 1 : -1;
                 return 0;
@@ -206,18 +263,24 @@
             document.getElementById('count').textContent = filtered.length;
 
             const tbody = document.getElementById('tbody');
-            tbody.innerHTML = filtered.map((p, i) => `
-                <tr>
+            tbody.innerHTML = filtered.map((p, i) => {
+                const diffClass = p.diff !== null
+                    ? (p.diff > 0 ? 'diff-positive' : p.diff < 0 ? 'diff-negative' : 'diff-neutral')
+                    : 'diff-neutral';
+                const diffText = p.diff !== null
+                    ? (p.diff > 0 ? '+' : '') + p.diff.toFixed(1)
+                    : '—';
+                return `<tr>
                     <td class="rank-cell">${i + 1}</td>
                     <td class="name-cell">${p.name}</td>
                     <td><span class="pos-badge pos-${p.pos}">${p.pos}</span></td>
-                    <td class="adp-cell">${p.adp !== null ? p.adp.toFixed(1) : '<span class="no-adp">N/A</span>'}</td>
                     <td class="team-cell">${p.team}</td>
-                    <td class="team-cell">${p.id}</td>
-                </tr>
-            `).join('');
+                    <td class="adp-cell source-dk">${p.dkAdp !== null ? p.dkAdp.toFixed(1) : '<span class="no-adp">—</span>'}</td>
+                    <td class="adp-cell source-ud">${p.udAdp !== null ? p.udAdp.toFixed(1) : '<span class="no-adp">—</span>'}</td>
+                    <td class="${diffClass}">${diffText}</td>
+                </tr>`;
+            }).join('');
 
-            // Update sort arrows
             document.querySelectorAll('thead th').forEach(th => {
                 const arrow = th.querySelector('.arrow');
                 if (th.dataset.col === sortCol) {
@@ -228,21 +291,16 @@
             });
         }
 
-        // Sort on header click
         document.querySelectorAll('thead th').forEach(th => {
             th.addEventListener('click', () => {
                 const col = th.dataset.col;
-                if (col === sortCol) {
-                    sortAsc = !sortAsc;
-                } else {
-                    sortCol = col;
-                    sortAsc = true;
-                }
+                if (col === 'rank') return;
+                if (col === sortCol) { sortAsc = !sortAsc; }
+                else { sortCol = col; sortAsc = col === 'name' || col === 'pos' || col === 'team'; }
                 render();
             });
         });
 
-        // Position filter
         document.querySelectorAll('.pos-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 document.querySelectorAll('.pos-btn').forEach(b => b.classList.remove('active'));
@@ -252,7 +310,6 @@
             });
         });
 
-        // Search
         document.getElementById('search').addEventListener('input', render);
 
         loadData();
