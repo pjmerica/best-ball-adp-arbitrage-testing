@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Ball ADP Comparison</title>
+    <title>Best Ball Arbitrage</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -71,9 +71,9 @@
         .diff-negative { color: #e74c3c; font-weight: 600; }
         .diff-neutral { color: #555; }
         .source-dk { color: #00c46a; }
-        .source-ud { color: #ff6b35; }
+        .source-ud { color: #ffd700; }
         .header-dk { color: #00c46a !important; }
-        .header-ud { color: #ff6b35 !important; }
+        .header-ud { color: #ffd700 !important; }
         .legend {
             display: flex; justify-content: center; gap: 24px;
             margin-bottom: 16px; font-size: 0.85rem;
@@ -83,7 +83,7 @@
             width: 10px; height: 10px; border-radius: 50%; display: inline-block;
         }
         .legend-dot.dk { background: #00c46a; }
-        .legend-dot.ud { background: #ff6b35; }
+        .legend-dot.ud { background: #ffd700; }
 
         /* Recommendation bubbles */
         .recs-container {
@@ -99,7 +99,7 @@
             border-bottom: 1px solid #2a3a4a;
         }
         .rec-bubble.dk-bubble h3 { color: #00c46a; }
-        .rec-bubble.ud-bubble h3 { color: #ff6b35; }
+        .rec-bubble.ud-bubble h3 { color: #ffd700; }
         .rec-bubble.diff-bubble h3 { color: #4a9eff; }
         .rec-list { list-style: none; padding: 0; margin: 0; }
         .rec-list li {
@@ -117,7 +117,7 @@
     </style>
 </head>
 <body>
-    <h1>Best Ball ADP Comparison</h1>
+    <h1>Best Ball Arbitrage</h1>
     <p class="subtitle">DraftKings vs Underdog &mdash; 2026 Season</p>
 
     <div class="legend">
