@@ -146,9 +146,13 @@
             <h3>Top 10 DraftKings Picks (% Diff)</h3>
             <ol class="rec-list" id="rec-dk-pct"></ol>
         </div>
-        <div class="rec-bubble diff-bubble">
-            <h3>Top 10 Biggest Raw ADP Gaps</h3>
-            <ol class="rec-list" id="rec-raw-diff"></ol>
+        <div class="rec-bubble ud-bubble">
+            <h3>Top 10 Underdog Picks (Raw Diff)</h3>
+            <ol class="rec-list" id="rec-ud-raw"></ol>
+        </div>
+        <div class="rec-bubble dk-bubble">
+            <h3>Top 10 DraftKings Picks (Raw Diff)</h3>
+            <ol class="rec-list" id="rec-dk-raw"></ol>
         </div>
     </div>
 
@@ -294,8 +298,8 @@
         }
 
         function renderRecs() {
-            // Only players with both ADPs
-            const matched = players.filter(p => p.dkAdp !== null && p.udAdp !== null && p.pctDiff !== null);
+            // Only players with both ADPs and avgAdp <= 350
+            const matched = players.filter(p => p.dkAdp !== null && p.udAdp !== null && p.pctDiff !== null && p.avgAdp <= 350);
 
             const WR_DK_BOOST = 1.15; // slight WR weighting on DK
 
@@ -316,9 +320,21 @@
                 })
                 .slice(0, 10);
 
-            // Biggest raw ADP gaps (absolute diff)
-            const byRawDiff = [...matched]
-                .sort((a, b) => Math.abs(b.diff) - Math.abs(a.diff))
+            // Best UD picks by raw diff: highest positive diff (DK ADP much higher)
+            const udByRaw = [...matched]
+                .filter(p => p.diff > 0)
+                .sort((a, b) => b.diff - a.diff)
+                .slice(0, 10);
+
+            // Best DK picks by raw diff: most negative diff (UD ADP much higher)
+            // WR gets slight boost
+            const dkByRaw = [...matched]
+                .filter(p => p.diff < 0)
+                .sort((a, b) => {
+                    const aScore = Math.abs(a.diff) * (a.pos === 'WR' ? WR_DK_BOOST : 1);
+                    const bScore = Math.abs(b.diff) * (b.pos === 'WR' ? WR_DK_BOOST : 1);
+                    return bScore - aScore;
+                })
                 .slice(0, 10);
 
             function recHTML(list, valFn) {
@@ -342,9 +358,13 @@
                 text: p.pctDiff.toFixed(1) + '%',
                 cls: 'red'
             }));
-            document.getElementById('rec-raw-diff').innerHTML = recHTML(byRawDiff, p => ({
-                text: (p.diff > 0 ? '+' : '') + p.diff.toFixed(1),
-                cls: p.diff > 0 ? 'green' : 'red'
+            document.getElementById('rec-ud-raw').innerHTML = recHTML(udByRaw, p => ({
+                text: '+' + p.diff.toFixed(1),
+                cls: 'green'
+            }));
+            document.getElementById('rec-dk-raw').innerHTML = recHTML(dkByRaw, p => ({
+                text: p.diff.toFixed(1),
+                cls: 'red'
             }));
         }
 
