@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DraftKings Best Ball ADP Rankings</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f1923;
+            color: #e0e0e0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 8px;
+            color: #fff;
+            font-size: 1.8rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        .controls {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        input[type="text"] {
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            background: #1a2634;
+            color: #fff;
+            font-size: 0.95rem;
+            width: 280px;
+        }
+        input[type="text"]::placeholder { color: #666; }
+        .pos-filters {
+            display: flex;
+            gap: 6px;
+        }
+        .pos-btn {
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            background: #1a2634;
+            color: #aaa;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.15s;
+        }
+        .pos-btn:hover { border-color: #555; color: #fff; }
+        .pos-btn.active { border-color: #4a9eff; color: #4a9eff; background: #1a2634; }
+        .pos-btn.active.qb { border-color: #e74c3c; color: #e74c3c; }
+        .pos-btn.active.rb { border-color: #2ecc71; color: #2ecc71; }
+        .pos-btn.active.wr { border-color: #3498db; color: #3498db; }
+        .pos-btn.active.te { border-color: #f39c12; color: #f39c12; }
+        .table-container {
+            overflow-x: auto;
+            border-radius: 12px;
+            border: 1px solid #1e2d3d;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+        }
+        thead th {
+            background: #1a2634;
+            padding: 12px 16px;
+            text-align: left;
+            cursor: pointer;
+            user-select: none;
+            position: sticky;
+            top: 0;
+            white-space: nowrap;
+            border-bottom: 2px solid #2a3a4a;
+        }
+        thead th:hover { color: #4a9eff; }
+        thead th .arrow { margin-left: 4px; font-size: 0.7rem; }
+        tbody tr {
+            border-bottom: 1px solid #1e2d3d;
+            transition: background 0.1s;
+        }
+        tbody tr:hover { background: #1a2634; }
+        td { padding: 10px 16px; white-space: nowrap; }
+        .rank-cell { color: #888; font-weight: 600; }
+        .name-cell { font-weight: 600; color: #fff; }
+        .pos-badge {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.8rem;
+        }
+        .pos-QB { background: rgba(231,76,60,0.2); color: #e74c3c; }
+        .pos-RB { background: rgba(46,204,113,0.2); color: #2ecc71; }
+        .pos-WR { background: rgba(52,152,219,0.2); color: #3498db; }
+        .pos-TE { background: rgba(243,156,18,0.2); color: #f39c12; }
+        .adp-cell { font-variant-numeric: tabular-nums; }
+        .team-cell { color: #999; }
+        .no-adp { color: #555; font-style: italic; }
+        .count-bar {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 16px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        .count-bar span { font-weight: 600; color: #ccc; }
+    </style>
+</head>
+<body>
+    <h1>DraftKings Best Ball ADP</h1>
+    <p class="subtitle">Pre-Draft Rankings &mdash; 2025 Season</p>
+
+    <div class="controls">
+        <input type="text" id="search" placeholder="Search player or team...">
+        <div class="pos-filters">
+            <button class="pos-btn active" data-pos="ALL">ALL</button>
+            <button class="pos-btn qb" data-pos="QB">QB</button>
+            <button class="pos-btn rb" data-pos="RB">RB</button>
+            <button class="pos-btn wr" data-pos="WR">WR</button>
+            <button class="pos-btn te" data-pos="TE">TE</button>
+        </div>
+    </div>
+
+    <div class="count-bar">Showing <span id="count">0</span> players</div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th data-col="rank">Rank <span class="arrow"></span></th>
+                    <th data-col="name">Name <span class="arrow"></span></th>
+                    <th data-col="pos">Pos <span class="arrow"></span></th>
+                    <th data-col="adp">ADP <span class="arrow"></span></th>
+                    <th data-col="team">Team <span class="arrow"></span></th>
+                    <th data-col="id">ID <span class="arrow"></span></th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+
+    <script>
+        let players = [];
+        let sortCol = 'adp';
+        let sortAsc = true;
+        let posFilter = 'ALL';
+
+        async function loadData() {
+            const resp = await fetch('DkPreDraftRankings.csv');
+            const text = await resp.text();
+            const lines = text.trim().split('\n');
+            const header = lines[0].split(',');
+
+            for (let i = 1; i < lines.length; i++) {
+                // Handle commas in quoted fields
+                const parts = lines[i].split(',');
+                const id = parts[0];
+                // Name might contain commas if quoted, but this data doesn't have that issue
+                const name = parts[1];
+                const pos = parts[2];
+                const adp = parts[3] ? parseFloat(parts[3]) : null;
+                const team = parts[4] || '';
+                players.push({ id, name, pos, adp, team });
+            }
+
+            render();
+        }
+
+        function render() {
+            const search = document.getElementById('search').value.toLowerCase();
+            let filtered = players.filter(p => {
+                if (posFilter !== 'ALL' && p.pos !== posFilter) return false;
+                if (search && !p.name.toLowerCase().includes(search) && !p.team.toLowerCase().includes(search)) return false;
+                return true;
+            });
+
+            filtered.sort((a, b) => {
+                let va = a[sortCol], vb = b[sortCol];
+                if (sortCol === 'adp') {
+                    // Nulls go to the end
+                    if (va === null && vb === null) return 0;
+                    if (va === null) return 1;
+                    if (vb === null) return -1;
+                }
+                if (sortCol === 'name' || sortCol === 'pos' || sortCol === 'team' || sortCol === 'id') {
+                    va = (va || '').toString().toLowerCase();
+                    vb = (vb || '').toString().toLowerCase();
+                }
+                if (va < vb) return sortAsc ? -1 : 1;
+                if (va > vb) return sortAsc ? 1 : -1;
+                return 0;
+            });
+
+            document.getElementById('count').textContent = filtered.length;
+
+            const tbody = document.getElementById('tbody');
+            tbody.innerHTML = filtered.map((p, i) => `
+                <tr>
+                    <td class="rank-cell">${i + 1}</td>
+                    <td class="name-cell">${p.name}</td>
+                    <td><span class="pos-badge pos-${p.pos}">${p.pos}</span></td>
+                    <td class="adp-cell">${p.adp !== null ? p.adp.toFixed(1) : '<span class="no-adp">N/A</span>'}</td>
+                    <td class="team-cell">${p.team}</td>
+                    <td class="team-cell">${p.id}</td>
+                </tr>
+            `).join('');
+
+            // Update sort arrows
+            document.querySelectorAll('thead th').forEach(th => {
+                const arrow = th.querySelector('.arrow');
+                if (th.dataset.col === sortCol) {
+                    arrow.textContent = sortAsc ? '▲' : '▼';
+                } else {
+                    arrow.textContent = '';
+                }
+            });
+        }
+
+        // Sort on header click
+        document.querySelectorAll('thead th').forEach(th => {
+            th.addEventListener('click', () => {
+                const col = th.dataset.col;
+                if (col === sortCol) {
+                    sortAsc = !sortAsc;
+                } else {
+                    sortCol = col;
+                    sortAsc = true;
+                }
+                render();
+            });
+        });
+
+        // Position filter
+        document.querySelectorAll('.pos-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.pos-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                posFilter = btn.dataset.pos;
+                render();
+            });
+        });
+
+        // Search
+        document.getElementById('search').addEventListener('input', render);
+
+        loadData();
+    </script>
+</body>
+</html>
