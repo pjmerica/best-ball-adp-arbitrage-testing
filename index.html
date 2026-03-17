@@ -119,6 +119,7 @@
                     <th data-col="team">Team <span class="arrow"></span></th>
                     <th data-col="dkAdp" class="header-dk">DK ADP <span class="arrow"></span></th>
                     <th data-col="udAdp" class="header-ud">UD ADP <span class="arrow"></span></th>
+                    <th data-col="diff">Diff <span class="arrow"></span></th>
                     <th data-col="pctDiff">% Diff <span class="arrow"></span></th>
                 </tr>
             </thead>
@@ -273,6 +274,12 @@
 
             const tbody = document.getElementById('tbody');
             tbody.innerHTML = filtered.map((p, i) => {
+                const diffClass = p.diff !== null
+                    ? (p.diff > 0 ? 'diff-positive' : p.diff < 0 ? 'diff-negative' : 'diff-neutral')
+                    : 'diff-neutral';
+                const diffText = p.diff !== null
+                    ? (p.diff > 0 ? '+' : '') + p.diff.toFixed(1)
+                    : '—';
                 const pctClass = p.pctDiff !== null
                     ? (p.pctDiff > 0 ? 'diff-positive' : p.pctDiff < 0 ? 'diff-negative' : 'diff-neutral')
                     : 'diff-neutral';
@@ -286,6 +293,7 @@
                     <td class="team-cell">${p.team}</td>
                     <td class="adp-cell source-dk">${p.dkAdp !== null ? p.dkAdp.toFixed(1) : '<span class="no-adp">—</span>'}</td>
                     <td class="adp-cell source-ud">${p.udAdp !== null ? p.udAdp.toFixed(1) : '<span class="no-adp">—</span>'}</td>
+                    <td class="${diffClass}">${diffText}</td>
                     <td class="${pctClass}">${pctText}</td>
                 </tr>`;
             }).join('');
