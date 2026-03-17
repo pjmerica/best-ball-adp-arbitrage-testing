@@ -97,6 +97,7 @@
 
     <div class="controls">
         <input type="text" id="search" placeholder="Search player or team...">
+        <input type="number" id="maxAdp" placeholder="Max ADP (e.g. 100)" style="padding:10px 16px;border-radius:8px;border:1px solid #333;background:#1a2634;color:#fff;font-size:0.95rem;width:180px;">
         <div class="pos-filters">
             <button class="pos-btn active" data-pos="ALL">ALL</button>
             <button class="pos-btn qb" data-pos="QB">QB</button>
@@ -118,7 +119,7 @@
                     <th data-col="team">Team <span class="arrow"></span></th>
                     <th data-col="dkAdp" class="header-dk">DK ADP <span class="arrow"></span></th>
                     <th data-col="udAdp" class="header-ud">UD ADP <span class="arrow"></span></th>
-                    <th data-col="diff">Diff <span class="arrow"></span></th>
+                    <th data-col="pctDiff">% Diff <span class="arrow"></span></th>
                 </tr>
             </thead>
             <tbody id="tbody"></tbody>
@@ -234,10 +235,12 @@
                 const dkAdp = dk ? dk.adp : null;
                 const udAdp = ud ? ud.adp : null;
                 const diff = (dkAdp !== null && udAdp !== null) ? dkAdp - udAdp : null;
+                const avg = (dkAdp !== null && udAdp !== null) ? (dkAdp + udAdp) / 2 : null;
+                const pctDiff = (diff !== null && avg !== null && avg !== 0) ? (diff / avg) * 100 : null;
                 const avgAdp = (dkAdp !== null && udAdp !== null)
                     ? (dkAdp + udAdp) / 2
                     : (dkAdp !== null ? dkAdp : (udAdp !== null ? udAdp : 9999));
-                players.push({ name, pos, team, dkAdp, udAdp, diff, avgAdp });
+                players.push({ name, pos, team, dkAdp, udAdp, diff, pctDiff, avgAdp });
             }
 
             render();
@@ -245,9 +248,13 @@
 
         function render() {
             const search = document.getElementById('search').value.toLowerCase();
+            const maxAdpVal = parseFloat(document.getElementById('maxAdp').value);
             let filtered = players.filter(p => {
                 if (posFilter !== 'ALL' && p.pos !== posFilter) return false;
                 if (search && !p.name.toLowerCase().includes(search) && !p.team.toLowerCase().includes(search)) return false;
+                if (!isNaN(maxAdpVal)) {
+                    if (p.avgAdp > maxAdpVal) return false;
+                }
                 return true;
             });
 
@@ -266,11 +273,11 @@
 
             const tbody = document.getElementById('tbody');
             tbody.innerHTML = filtered.map((p, i) => {
-                const diffClass = p.diff !== null
-                    ? (p.diff > 0 ? 'diff-positive' : p.diff < 0 ? 'diff-negative' : 'diff-neutral')
+                const pctClass = p.pctDiff !== null
+                    ? (p.pctDiff > 0 ? 'diff-positive' : p.pctDiff < 0 ? 'diff-negative' : 'diff-neutral')
                     : 'diff-neutral';
-                const diffText = p.diff !== null
-                    ? (p.diff > 0 ? '+' : '') + p.diff.toFixed(1)
+                const pctText = p.pctDiff !== null
+                    ? (p.pctDiff > 0 ? '+' : '') + p.pctDiff.toFixed(1) + '%'
                     : '—';
                 return `<tr>
                     <td class="rank-cell">${i + 1}</td>
@@ -279,7 +286,7 @@
                     <td class="team-cell">${p.team}</td>
                     <td class="adp-cell source-dk">${p.dkAdp !== null ? p.dkAdp.toFixed(1) : '<span class="no-adp">—</span>'}</td>
                     <td class="adp-cell source-ud">${p.udAdp !== null ? p.udAdp.toFixed(1) : '<span class="no-adp">—</span>'}</td>
-                    <td class="${diffClass}">${diffText}</td>
+                    <td class="${pctClass}">${pctText}</td>
                 </tr>`;
             }).join('');
 
@@ -313,6 +320,7 @@
         });
 
         document.getElementById('search').addEventListener('input', render);
+        document.getElementById('maxAdp').addEventListener('input', render);
 
         loadData();
     </script>
