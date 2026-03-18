@@ -111,8 +111,8 @@
         .rec-name { color: #fff; font-weight: 600; flex: 1; margin: 0 8px; }
         .rec-pos { margin-right: 8px; }
         .rec-val { font-weight: 700; font-variant-numeric: tabular-nums; min-width: 55px; text-align: right; }
-        .rec-val.green { color: #2ecc71; }
-        .rec-val.red { color: #e74c3c; }
+        .rec-val.ud { color: #ffd700; }
+        .rec-val.dk { color: #00c46a; }
         .rec-adps { color: #666; font-size: 0.78rem; min-width: 90px; text-align: right; }
     </style>
 </head>
@@ -351,19 +351,19 @@
 
             document.getElementById('rec-ud-pct').innerHTML = recHTML(udByPct, p => ({
                 text: Math.abs(p.pctDiff).toFixed(1) + '%',
-                cls: 'green'
+                cls: 'ud'
             }));
             document.getElementById('rec-dk-pct').innerHTML = recHTML(dkByPct, p => ({
                 text: Math.abs(p.pctDiff).toFixed(1) + '%',
-                cls: 'red'
+                cls: 'dk'
             }));
             document.getElementById('rec-ud-raw').innerHTML = recHTML(udByRaw, p => ({
                 text: Math.abs(p.diff).toFixed(1),
-                cls: 'green'
+                cls: 'ud'
             }));
             document.getElementById('rec-dk-raw').innerHTML = recHTML(dkByRaw, p => ({
                 text: Math.abs(p.diff).toFixed(1),
-                cls: 'red'
+                cls: 'dk'
             }));
         }
 
