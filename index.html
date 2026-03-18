@@ -350,19 +350,19 @@
             }
 
             document.getElementById('rec-ud-pct').innerHTML = recHTML(udByPct, p => ({
-                text: '+' + p.pctDiff.toFixed(1) + '%',
+                text: Math.abs(p.pctDiff).toFixed(1) + '%',
                 cls: 'green'
             }));
             document.getElementById('rec-dk-pct').innerHTML = recHTML(dkByPct, p => ({
-                text: p.pctDiff.toFixed(1) + '%',
+                text: Math.abs(p.pctDiff).toFixed(1) + '%',
                 cls: 'red'
             }));
             document.getElementById('rec-ud-raw').innerHTML = recHTML(udByRaw, p => ({
-                text: '+' + p.diff.toFixed(1),
+                text: Math.abs(p.diff).toFixed(1),
                 cls: 'green'
             }));
             document.getElementById('rec-dk-raw').innerHTML = recHTML(dkByRaw, p => ({
-                text: p.diff.toFixed(1),
+                text: Math.abs(p.diff).toFixed(1),
                 cls: 'red'
             }));
         }
