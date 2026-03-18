@@ -125,6 +125,16 @@
         <div class="legend-item"><span class="legend-dot ud"></span> Underdog</div>
     </div>
 
+    <div class="controls" style="margin-bottom: 20px;">
+        <div class="pos-filters">
+            <button class="pos-btn active rec-pos-btn" data-pos="ALL">ALL</button>
+            <button class="pos-btn qb rec-pos-btn" data-pos="QB">QB</button>
+            <button class="pos-btn rb rec-pos-btn" data-pos="RB">RB</button>
+            <button class="pos-btn wr rec-pos-btn" data-pos="WR">WR</button>
+            <button class="pos-btn te rec-pos-btn" data-pos="TE">TE</button>
+        </div>
+    </div>
+
     <div class="recs-container">
         <div class="rec-bubble ud-bubble">
             <h3>Top 10 Underdog Picks (% Diff)</h3>
@@ -181,6 +191,7 @@
         let sortCol = 'avgAdp';
         let sortAsc = true;
         let posFilter = 'ALL';
+        let recPosFilter = 'ALL';
 
         // Parse CSV handling quoted fields
         function parseCSV(text) {
@@ -299,7 +310,8 @@
 
         function renderRecs() {
             // Only players with both ADPs and avgAdp <= 350
-            const matched = players.filter(p => p.dkAdp !== null && p.udAdp !== null && p.pctDiff !== null && p.avgAdp <= 350);
+            const matched = players.filter(p => p.dkAdp !== null && p.udAdp !== null && p.pctDiff !== null && p.avgAdp <= 350
+                && (recPosFilter === 'ALL' || p.pos === recPosFilter));
 
             // Best DK picks: positive diff means DK ADP higher = drafted later on DK = cheaper on DK
             const dkByPct = [...matched]
@@ -429,12 +441,23 @@
             });
         });
 
-        document.querySelectorAll('.pos-btn').forEach(btn => {
+        // Table position filter
+        document.querySelectorAll('.controls:last-of-type .pos-filters .pos-btn').forEach(btn => {
             btn.addEventListener('click', () => {
-                document.querySelectorAll('.pos-btn').forEach(b => b.classList.remove('active'));
+                btn.closest('.pos-filters').querySelectorAll('.pos-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 posFilter = btn.dataset.pos;
                 render();
+            });
+        });
+
+        // Rec position filter
+        document.querySelectorAll('.rec-pos-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.rec-pos-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                recPosFilter = btn.dataset.pos;
+                renderRecs();
             });
         });
 
