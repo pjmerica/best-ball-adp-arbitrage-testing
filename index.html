@@ -303,38 +303,37 @@
 
             const WR_DK_BOOST = 1.15; // slight WR weighting on DK
 
-            // Best UD picks: highest positive % diff (cheaper on Underdog, DK ADP higher)
-            const udByPct = [...matched]
-                .filter(p => p.pctDiff > 0)
-                .sort((a, b) => b.pctDiff - a.pctDiff)
-                .slice(0, 10);
-
-            // Best DK picks: most negative % diff (cheaper on DK, UD ADP higher)
-            // WR gets a slight boost via multiplier
+            // Best DK picks: positive diff means DK ADP higher = drafted later on DK = cheaper on DK
             const dkByPct = [...matched]
-                .filter(p => p.pctDiff < 0)
+                .filter(p => p.pctDiff > 0)
                 .sort((a, b) => {
-                    const aScore = Math.abs(a.pctDiff) * (a.pos === 'WR' ? WR_DK_BOOST : 1);
-                    const bScore = Math.abs(b.pctDiff) * (b.pos === 'WR' ? WR_DK_BOOST : 1);
+                    const aScore = a.pctDiff * (a.pos === 'WR' ? WR_DK_BOOST : 1);
+                    const bScore = b.pctDiff * (b.pos === 'WR' ? WR_DK_BOOST : 1);
                     return bScore - aScore;
                 })
                 .slice(0, 10);
 
-            // Best UD picks by raw diff: highest positive diff (DK ADP much higher)
-            const udByRaw = [...matched]
-                .filter(p => p.diff > 0)
-                .sort((a, b) => b.diff - a.diff)
+            // Best UD picks: negative diff means UD ADP higher = drafted later on UD = cheaper on UD
+            const udByPct = [...matched]
+                .filter(p => p.pctDiff < 0)
+                .sort((a, b) => a.pctDiff - b.pctDiff)
                 .slice(0, 10);
 
-            // Best DK picks by raw diff: most negative diff (UD ADP much higher)
+            // Best DK picks by raw diff: positive diff = cheaper on DK
             // WR gets slight boost
             const dkByRaw = [...matched]
-                .filter(p => p.diff < 0)
+                .filter(p => p.diff > 0)
                 .sort((a, b) => {
-                    const aScore = Math.abs(a.diff) * (a.pos === 'WR' ? WR_DK_BOOST : 1);
-                    const bScore = Math.abs(b.diff) * (b.pos === 'WR' ? WR_DK_BOOST : 1);
+                    const aScore = a.diff * (a.pos === 'WR' ? WR_DK_BOOST : 1);
+                    const bScore = b.diff * (b.pos === 'WR' ? WR_DK_BOOST : 1);
                     return bScore - aScore;
                 })
+                .slice(0, 10);
+
+            // Best UD picks by raw diff: negative diff = cheaper on UD
+            const udByRaw = [...matched]
+                .filter(p => p.diff < 0)
+                .sort((a, b) => a.diff - b.diff)
                 .slice(0, 10);
 
             function recHTML(list, valFn) {
