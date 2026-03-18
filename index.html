@@ -374,7 +374,11 @@
                 if (posFilter !== 'ALL' && p.pos !== posFilter) return false;
                 if (search && !p.name.toLowerCase().includes(search) && !p.team.toLowerCase().includes(search)) return false;
                 if (!isNaN(maxAdpVal)) {
-                    if (p.avgAdp > maxAdpVal) return false;
+                    const minAdp = Math.min(
+                        p.dkAdp !== null ? p.dkAdp : Infinity,
+                        p.udAdp !== null ? p.udAdp : Infinity
+                    );
+                    if (minAdp > maxAdpVal) return false;
                 }
                 return true;
             });
