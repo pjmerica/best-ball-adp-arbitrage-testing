@@ -158,11 +158,11 @@
         <input type="text" id="search" placeholder="Search player or team...">
         <input type="number" id="maxAdp" placeholder="Max ADP (e.g. 100)" style="padding:10px 16px;border-radius:8px;border:1px solid #333;background:#1a2634;color:#fff;font-size:0.95rem;width:180px;">
         <div class="pos-filters">
-            <button class="pos-btn active" data-pos="ALL">ALL</button>
-            <button class="pos-btn qb" data-pos="QB">QB</button>
-            <button class="pos-btn rb" data-pos="RB">RB</button>
-            <button class="pos-btn wr" data-pos="WR">WR</button>
-            <button class="pos-btn te" data-pos="TE">TE</button>
+            <button class="pos-btn active table-pos-btn" data-pos="ALL">ALL</button>
+            <button class="pos-btn qb table-pos-btn" data-pos="QB">QB</button>
+            <button class="pos-btn rb table-pos-btn" data-pos="RB">RB</button>
+            <button class="pos-btn wr table-pos-btn" data-pos="WR">WR</button>
+            <button class="pos-btn te table-pos-btn" data-pos="TE">TE</button>
         </div>
     </div>
 
@@ -442,9 +442,9 @@
         });
 
         // Table position filter
-        document.querySelectorAll('.controls:last-of-type .pos-filters .pos-btn').forEach(btn => {
+        document.querySelectorAll('.table-pos-btn').forEach(btn => {
             btn.addEventListener('click', () => {
-                btn.closest('.pos-filters').querySelectorAll('.pos-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.table-pos-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 posFilter = btn.dataset.pos;
                 render();
