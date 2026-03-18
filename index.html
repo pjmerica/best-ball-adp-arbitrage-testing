@@ -301,16 +301,10 @@
             // Only players with both ADPs and avgAdp <= 350
             const matched = players.filter(p => p.dkAdp !== null && p.udAdp !== null && p.pctDiff !== null && p.avgAdp <= 350);
 
-            const WR_DK_BOOST = 1.15; // slight WR weighting on DK
-
             // Best DK picks: positive diff means DK ADP higher = drafted later on DK = cheaper on DK
             const dkByPct = [...matched]
                 .filter(p => p.pctDiff > 0)
-                .sort((a, b) => {
-                    const aScore = a.pctDiff * (a.pos === 'WR' ? WR_DK_BOOST : 1);
-                    const bScore = b.pctDiff * (b.pos === 'WR' ? WR_DK_BOOST : 1);
-                    return bScore - aScore;
-                })
+                .sort((a, b) => b.pctDiff - a.pctDiff)
                 .slice(0, 10);
 
             // Best UD picks: negative diff means UD ADP higher = drafted later on UD = cheaper on UD
@@ -320,14 +314,9 @@
                 .slice(0, 10);
 
             // Best DK picks by raw diff: positive diff = cheaper on DK
-            // WR gets slight boost
             const dkByRaw = [...matched]
                 .filter(p => p.diff > 0)
-                .sort((a, b) => {
-                    const aScore = a.diff * (a.pos === 'WR' ? WR_DK_BOOST : 1);
-                    const bScore = b.diff * (b.pos === 'WR' ? WR_DK_BOOST : 1);
-                    return bScore - aScore;
-                })
+                .sort((a, b) => b.diff - a.diff)
                 .slice(0, 10);
 
             // Best UD picks by raw diff: negative diff = cheaper on UD
