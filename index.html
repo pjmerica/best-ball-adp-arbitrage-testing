@@ -362,12 +362,10 @@
             let filtered = players.filter(p => {
                 if (posFilter !== 'ALL' && p.pos !== posFilter) return false;
                 if (search && !p.name.toLowerCase().includes(search) && !p.team.toLowerCase().includes(search)) return false;
-                if (!isNaN(maxAdpVal)) {
-                    const minAdp = Math.min(
-                        p.dkAdp !== null ? p.dkAdp : Infinity,
-                        p.udAdp !== null ? p.udAdp : Infinity
-                    );
-                    if (minAdp > maxAdpVal) return false;
+                if (!isNaN(maxAdpVal) && maxAdpVal > 0) {
+                    const dkOk = p.dkAdp !== null && p.dkAdp <= maxAdpVal;
+                    const udOk = p.udAdp !== null && p.udAdp <= maxAdpVal;
+                    if (!dkOk && !udOk) return false;
                 }
                 return true;
             });
@@ -442,6 +440,7 @@
 
         document.getElementById('search').addEventListener('input', render);
         document.getElementById('maxAdp').addEventListener('input', render);
+        document.getElementById('maxAdp').addEventListener('change', render);
 
         loadData();
     </script>
