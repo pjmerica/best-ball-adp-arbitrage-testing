@@ -137,19 +137,19 @@
 
     <div class="recs-container">
         <div class="rec-bubble ud-bubble">
-            <h3>Top 10 Underdog Picks (% Diff)</h3>
+            <h3 id="title-ud-pct">Biggest % Diff — Cheaper on Underdog</h3>
             <ol class="rec-list" id="rec-ud-pct"></ol>
         </div>
         <div class="rec-bubble dk-bubble">
-            <h3>Top 10 DraftKings Picks (% Diff)</h3>
+            <h3 id="title-dk-pct">Biggest % Diff — Cheaper on DraftKings</h3>
             <ol class="rec-list" id="rec-dk-pct"></ol>
         </div>
         <div class="rec-bubble ud-bubble">
-            <h3>Top 10 Underdog Picks (Raw Diff)</h3>
+            <h3 id="title-ud-raw">Biggest ADP Gap — Cheaper on Underdog</h3>
             <ol class="rec-list" id="rec-ud-raw"></ol>
         </div>
         <div class="rec-bubble dk-bubble">
-            <h3>Top 10 DraftKings Picks (Raw Diff)</h3>
+            <h3 id="title-dk-raw">Biggest ADP Gap — Cheaper on DraftKings</h3>
             <ol class="rec-list" id="rec-dk-raw"></ol>
         </div>
     </div>
@@ -350,6 +350,12 @@
                 }).join('');
             }
 
+            const posLabel = recPosFilter === 'ALL' ? '' : ` (${recPosFilter})`;
+            document.getElementById('title-ud-pct').textContent = `Top ${udByPct.length}${posLabel} — Biggest % Diff, Cheaper on Underdog`;
+            document.getElementById('title-dk-pct').textContent = `Top ${dkByPct.length}${posLabel} — Biggest % Diff, Cheaper on DraftKings`;
+            document.getElementById('title-ud-raw').textContent = `Top ${udByRaw.length}${posLabel} — Biggest ADP Gap, Cheaper on Underdog`;
+            document.getElementById('title-dk-raw').textContent = `Top ${dkByRaw.length}${posLabel} — Biggest ADP Gap, Cheaper on DraftKings`;
+
             document.getElementById('rec-ud-pct').innerHTML = recHTML(udByPct, p => ({
                 text: Math.abs(p.pctDiff).toFixed(1) + '%',
                 cls: 'ud'
@@ -374,11 +380,7 @@
             let filtered = players.filter(p => {
                 if (posFilter !== 'ALL' && p.pos !== posFilter) return false;
                 if (search && !p.name.toLowerCase().includes(search) && !p.team.toLowerCase().includes(search)) return false;
-                if (!isNaN(maxAdpVal) && maxAdpVal > 0) {
-                    const dkOk = p.dkAdp !== null && p.dkAdp <= maxAdpVal;
-                    const udOk = p.udAdp !== null && p.udAdp <= maxAdpVal;
-                    if (!dkOk && !udOk) return false;
-                }
+                if (!isNaN(maxAdpVal) && maxAdpVal > 0 && p.avgAdp > maxAdpVal) return false;
                 return true;
             });
 
