@@ -118,7 +118,7 @@
 </head>
 <body>
     <h1>Best Ball Arbitrage and ADP Viewer</h1>
-    <p class="subtitle">DraftKings vs Underdog &mdash; 2026 Season</p>
+    <p class="subtitle">DraftKings vs Underdog | 2026 Season</p>
 
     <div class="legend">
         <div class="legend-item"><span class="legend-dot dk"></span> DraftKings</div>
@@ -351,10 +351,10 @@
             }
 
             const posLabel = recPosFilter === 'ALL' ? '' : ` (${recPosFilter})`;
-            document.getElementById('title-ud-pct').textContent = `Top ${udByPct.length}${posLabel} — Biggest % Diff, Cheaper on Underdog`;
-            document.getElementById('title-dk-pct').textContent = `Top ${dkByPct.length}${posLabel} — Biggest % Diff, Cheaper on DraftKings`;
-            document.getElementById('title-ud-raw').textContent = `Top ${udByRaw.length}${posLabel} — Biggest ADP Gap, Cheaper on Underdog`;
-            document.getElementById('title-dk-raw').textContent = `Top ${dkByRaw.length}${posLabel} — Biggest ADP Gap, Cheaper on DraftKings`;
+            document.getElementById('title-ud-pct').textContent = `Top ${udByPct.length}${posLabel}: Biggest % Diff, Cheaper on Underdog`;
+            document.getElementById('title-dk-pct').textContent = `Top ${dkByPct.length}${posLabel}: Biggest % Diff, Cheaper on DraftKings`;
+            document.getElementById('title-ud-raw').textContent = `Top ${udByRaw.length}${posLabel}: Biggest ADP Gap, Cheaper on Underdog`;
+            document.getElementById('title-dk-raw').textContent = `Top ${dkByRaw.length}${posLabel}: Biggest ADP Gap, Cheaper on DraftKings`;
 
             document.getElementById('rec-ud-pct').innerHTML = recHTML(udByPct, p => ({
                 text: Math.abs(p.pctDiff).toFixed(1) + '%',
