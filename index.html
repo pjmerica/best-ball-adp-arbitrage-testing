@@ -262,7 +262,8 @@
                 if (!r[1]) continue;
                 const name = r[1];
                 const pos = r[2];
-                const adp = r[3] ? parseFloat(r[3]) : null;
+                const adpRaw = parseFloat(r[3]);
+                const adp = isNaN(adpRaw) ? null : adpRaw;
                 const team = r[4] || '';
                 const key = normalizeName(name);
                 dkMap[key] = { name, pos, adp, team };
@@ -277,7 +278,8 @@
                 const firstName = r[1];
                 const lastName = r[2];
                 const name = firstName + ' ' + lastName;
-                const adp = r[3] ? parseFloat(r[3]) : null;
+                const adpRaw2 = parseFloat(r[3]);
+                const adp = isNaN(adpRaw2) ? null : adpRaw2;
                 const pos = r[6] || '';
                 const teamFull = r[7] || '';
                 const team = teamAbbrev[teamFull] || teamFull;
