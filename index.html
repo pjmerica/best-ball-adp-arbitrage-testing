@@ -13,7 +13,13 @@
             padding: 20px;
         }
         h1 { text-align: center; margin-bottom: 6px; color: #fff; font-size: 1.8rem; }
-        .subtitle { text-align: center; color: #888; margin-bottom: 20px; font-size: 0.9rem; }
+        .subtitle { text-align: center; color: #888; margin-bottom: 12px; font-size: 0.9rem; }
+        .blurb {
+            max-width: 700px; margin: 0 auto 24px; text-align: center;
+            color: #99aabb; font-size: 0.88rem; line-height: 1.6;
+            background: #1a2634; border: 1px solid #1e2d3d; border-radius: 10px;
+            padding: 14px 20px;
+        }
         .controls {
             display: flex; gap: 12px; margin-bottom: 16px;
             flex-wrap: wrap; justify-content: center;
@@ -119,6 +125,12 @@
 <body>
     <h1>Best Ball Arbitrage and ADP Viewer</h1>
     <p class="subtitle">DraftKings vs Underdog | 2026 Season</p>
+    <p class="blurb">
+        ADP arbitrage is the art of finding players who are going significantly earlier or later on one platform vs another.
+        If a player is cheap on DraftKings but expensive on Underdog, you can target them on DK and fade them on UD.
+        The top picks above highlight the biggest discrepancies between platforms — sorted by both raw ADP gap and percentage difference.
+        Use the filters to narrow by position or ADP range.
+    </p>
 
     <div class="legend">
         <div class="legend-item"><span class="legend-dot dk"></span> DraftKings</div>
