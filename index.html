@@ -258,8 +258,8 @@
 
         async function loadData() {
             const [dkResp, udResp] = await Promise.all([
-                fetch('DkPreDraftRankings.csv'),
-                fetch('UnderdogRankings.csv')
+                fetch('dk_adp.csv'),
+                fetch('ud_adp.csv')
             ]);
             const [dkText, udText] = await Promise.all([dkResp.text(), udResp.text()]);
 
