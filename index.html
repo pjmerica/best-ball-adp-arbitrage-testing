@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Ball ADP Arbitrage</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-    <style>
+<style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -122,64 +121,16 @@
         .rec-val { font-weight: 700; font-variant-numeric: tabular-nums; min-width: 55px; text-align: right; }
         .rec-val.ud { color: #ffd700; }
         .rec-val.dk { color: #00c46a; }
-        .rec-val.rising { color: #e74c3c; }
-        .rec-val.falling { color: #2ecc71; }
         .rec-adps { color: #666; font-size: 0.78rem; min-width: 90px; text-align: right; }
-        .rec-bubble.rising-bubble h3 { color: #e74c3c; }
-        .rec-bubble.falling-bubble h3 { color: #2ecc71; }
-        .movers-section h2 {
-            text-align: center; color: #fff; font-size: 1.3rem; margin: 32px 0 8px;
-        }
-        .movers-subtitle {
-            text-align: center; color: #666; font-size: 0.82rem; margin-bottom: 16px;
-        }
-        .movers-pos-wrap {
-            display: flex; justify-content: center; margin-bottom: 16px;
-        }
 
-        /* History section */
-        .history-section {
-            max-width: 800px; margin: 40px auto 32px;
-        }
-        .history-section h2 {
-            text-align: center; color: #fff; font-size: 1.3rem; margin-bottom: 16px;
-        }
-        .history-search-wrap {
-            display: flex; justify-content: center; margin-bottom: 20px; gap: 10px;
-        }
-        #history-search {
-            padding: 10px 16px; border-radius: 8px; border: 1px solid #333;
-            background: #1a2634; color: #fff; font-size: 0.95rem; width: 320px;
-        }
-        #history-search::placeholder { color: #666; }
-        .history-suggestions {
-            position: relative; width: 320px;
-        }
-        .suggestions-list {
-            position: absolute; top: 0; left: 0; right: 0;
-            background: #1a2634; border: 1px solid #2a3a4a; border-radius: 8px;
-            z-index: 100; max-height: 220px; overflow-y: auto;
-        }
-        .suggestions-list div {
-            padding: 8px 16px; cursor: pointer; font-size: 0.9rem; color: #ccc;
-            border-bottom: 1px solid #1e2d3d;
-        }
-        .suggestions-list div:last-child { border-bottom: none; }
-        .suggestions-list div:hover { background: #243447; color: #fff; }
-        .history-chart-wrap {
-            background: #1a2634; border: 1px solid #1e2d3d; border-radius: 12px;
-            padding: 20px; display: none;
-        }
-        .history-chart-wrap.visible { display: block; }
-        .history-player-title {
-            text-align: center; font-size: 1rem; font-weight: 700; color: #fff;
-            margin-bottom: 16px;
-        }
     </style>
 </head>
 <body>
     <h1>Best Ball Arbitrage and ADP Viewer</h1>
     <p class="subtitle">DraftKings vs Underdog | 2026 Season</p>
+    <div style="text-align:center;margin-bottom:16px;">
+        <a href="history.html" style="color:#4a9eff;text-decoration:none;font-size:0.9rem;padding:7px 18px;border:1px solid #4a9eff;border-radius:8px;">ADP History & Movers →</a>
+    </div>
     <p class="updated">Last updated: <span id="last-updated">loading...</span></p>
     <p class="blurb">
         This tool shows the ADP differences between the DraftKings and Underdog best ball markets. Use it to find where the two platforms disagree and exploit the gap.
@@ -216,54 +167,6 @@
         <div class="rec-bubble dk-bubble">
             <h3 id="title-dk-raw">Biggest ADP Gap — Cheaper on DraftKings</h3>
             <ol class="rec-list" id="rec-dk-raw"></ol>
-        </div>
-    </div>
-
-    <!-- Largest Movers -->
-    <div class="movers-section">
-        <h2>Largest ADP Movers</h2>
-        <p class="movers-subtitle" id="movers-subtitle">loading...</p>
-        <div class="movers-pos-wrap">
-            <div class="pos-filters">
-                <button class="pos-btn active movers-pos-btn" data-pos="ALL">ALL</button>
-                <button class="pos-btn qb movers-pos-btn" data-pos="QB">QB</button>
-                <button class="pos-btn rb movers-pos-btn" data-pos="RB">RB</button>
-                <button class="pos-btn wr movers-pos-btn" data-pos="WR">WR</button>
-                <button class="pos-btn te movers-pos-btn" data-pos="TE">TE</button>
-            </div>
-        </div>
-        <div class="recs-container">
-            <div class="rec-bubble rising-bubble">
-                <h3 id="title-rising-dk">Rising on DraftKings (ADP falling)</h3>
-                <ol class="rec-list" id="rec-rising-dk"></ol>
-            </div>
-            <div class="rec-bubble falling-bubble">
-                <h3 id="title-falling-dk">Falling on DraftKings (ADP rising)</h3>
-                <ol class="rec-list" id="rec-falling-dk"></ol>
-            </div>
-            <div class="rec-bubble rising-bubble">
-                <h3 id="title-rising-ud">Rising on Underdog (ADP falling)</h3>
-                <ol class="rec-list" id="rec-rising-ud"></ol>
-            </div>
-            <div class="rec-bubble falling-bubble">
-                <h3 id="title-falling-ud">Falling on Underdog (ADP rising)</h3>
-                <ol class="rec-list" id="rec-falling-ud"></ol>
-            </div>
-        </div>
-    </div>
-
-    <!-- ADP History Chart -->
-    <div class="history-section">
-        <h2>ADP History</h2>
-        <div class="history-search-wrap">
-            <div class="history-suggestions">
-                <input type="text" id="history-search" placeholder="Search a player..." autocomplete="off">
-                <div class="suggestions-list" id="suggestions-list" style="display:none;"></div>
-            </div>
-        </div>
-        <div class="history-chart-wrap" id="history-chart-wrap">
-            <div class="history-player-title" id="history-player-title"></div>
-            <canvas id="history-chart" height="120"></canvas>
         </div>
     </div>
 
@@ -594,224 +497,6 @@
         document.getElementById('maxAdp').addEventListener('change', render);
 
         loadData();
-
-        // ADP History
-        const SNAPSHOTS = [
-            { date: '2026-03-17', label: 'Mar 17', dk: 'dk_adp_2026-03-17.csv', ud: 'ud_adp_2026-03-17.csv' },
-            { date: '2026-03-23', label: 'Mar 23', dk: 'dk_adp_2026-03-23.csv', ud: 'ud_adp_2026-03-23.csv' },
-            { date: '2026-04-06', label: 'Apr 6',  dk: 'dk_adp_2026-04-06.csv', ud: 'ud_adp_2026-04-06.csv' },
-            { date: '2026-04-07', label: 'Apr 7',  dk: 'dk_adp_2026-04-07.csv', ud: 'ud_adp_2026-04-07.csv' },
-        ];
-
-        let historyData = null;
-        let historyChart = null;
-
-        async function loadHistoryData() {
-            const snapshots = await Promise.all(SNAPSHOTS.map(async s => {
-                const [dkResp, udResp] = await Promise.all([fetch(s.dk), fetch(s.ud)]);
-                const [dkText, udText] = await Promise.all([dkResp.text(), udResp.text()]);
-                const dkRows = parseCSV(dkText);
-                const udRows = parseCSV(udText);
-                const dkMap = {};
-                for (let i = 1; i < dkRows.length; i++) {
-                    const r = dkRows[i];
-                    if (!r[1]) continue;
-                    const adp = parseFloat(r[3]);
-                    dkMap[normalizeName(r[1])] = { name: r[1], pos: r[2], adp: isNaN(adp) ? null : adp };
-                }
-                const udMap = {};
-                for (let i = 1; i < udRows.length; i++) {
-                    const r = udRows[i];
-                    if (!r[1]) continue;
-                    const name = r[1] + ' ' + r[2];
-                    const adp = parseFloat(r[3]);
-                    udMap[normalizeName(name)] = { name, adp: isNaN(adp) ? null : adp };
-                }
-                return { label: s.label, dkMap, udMap };
-            }));
-            // Build player index from all snapshots
-            const allKeys = new Set();
-            snapshots.forEach(s => { Object.keys(s.dkMap).forEach(k => allKeys.add(k)); Object.keys(s.udMap).forEach(k => allKeys.add(k)); });
-            const playerIndex = {};
-            for (const key of allKeys) {
-                let name = null, pos = null;
-                for (const s of snapshots) {
-                    if (s.dkMap[key]) { name = s.dkMap[key].name; pos = s.dkMap[key].pos; break; }
-                    if (s.udMap[key]) { name = s.udMap[key].name; break; }
-                }
-                playerIndex[key] = { name, pos, key };
-            }
-            historyData = { snapshots, playerIndex };
-            renderMovers();
-        }
-
-        function showHistoryChart(key) {
-            const { snapshots, playerIndex } = historyData;
-            const info = playerIndex[key];
-            if (!info) return;
-            const labels = snapshots.map(s => s.label);
-            const dkPoints = snapshots.map(s => s.dkMap[key] ? s.dkMap[key].adp : null);
-            const udPoints = snapshots.map(s => s.udMap[key] ? s.udMap[key].adp : null);
-
-            document.getElementById('history-player-title').textContent = info.name + (info.pos ? ' — ' + info.pos : '');
-            const wrap = document.getElementById('history-chart-wrap');
-            wrap.classList.add('visible');
-
-            if (historyChart) historyChart.destroy();
-            const ctx = document.getElementById('history-chart').getContext('2d');
-            historyChart = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels,
-                    datasets: [
-                        {
-                            label: 'DraftKings ADP',
-                            data: dkPoints,
-                            borderColor: '#00c46a',
-                            backgroundColor: 'rgba(0,196,106,0.1)',
-                            pointBackgroundColor: '#00c46a',
-                            tension: 0.3,
-                            spanGaps: true,
-                        },
-                        {
-                            label: 'Underdog ADP',
-                            data: udPoints,
-                            borderColor: '#ffd700',
-                            backgroundColor: 'rgba(255,215,0,0.1)',
-                            pointBackgroundColor: '#ffd700',
-                            tension: 0.3,
-                            spanGaps: true,
-                        }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: { labels: { color: '#ccc' } },
-                        tooltip: {
-                            callbacks: {
-                                label: ctx => ctx.dataset.label + ': ' + (ctx.parsed.y !== null ? ctx.parsed.y.toFixed(1) : 'N/A')
-                            }
-                        }
-                    },
-                    scales: {
-                        x: { ticks: { color: '#aaa' }, grid: { color: '#1e2d3d' } },
-                        y: {
-                            reverse: true,
-                            ticks: { color: '#aaa' },
-                            grid: { color: '#1e2d3d' },
-                            title: { display: true, text: 'ADP (lower = earlier pick)', color: '#888' }
-                        }
-                    }
-                }
-            });
-        }
-
-        // History search autocomplete
-        const historyInput = document.getElementById('history-search');
-        const suggestionsList = document.getElementById('suggestions-list');
-
-        historyInput.addEventListener('input', () => {
-            if (!historyData) return;
-            const val = historyInput.value.toLowerCase().trim();
-            if (!val) { suggestionsList.style.display = 'none'; return; }
-            const matches = Object.values(historyData.playerIndex)
-                .filter(p => p.name && p.name.toLowerCase().includes(val))
-                .sort((a, b) => a.name.localeCompare(b.name))
-                .slice(0, 12);
-            if (!matches.length) { suggestionsList.style.display = 'none'; return; }
-            suggestionsList.innerHTML = matches.map(p =>
-                `<div data-key="${p.key}">${p.name}${p.pos ? ' <span style="color:#666;font-size:0.8rem">' + p.pos + '</span>' : ''}</div>`
-            ).join('');
-            suggestionsList.style.display = 'block';
-        });
-
-        suggestionsList.addEventListener('click', e => {
-            const div = e.target.closest('[data-key]');
-            if (!div) return;
-            const key = div.dataset.key;
-            historyInput.value = historyData.playerIndex[key].name;
-            suggestionsList.style.display = 'none';
-            showHistoryChart(key);
-        });
-
-        document.addEventListener('click', e => {
-            if (!historyInput.contains(e.target) && !suggestionsList.contains(e.target)) {
-                suggestionsList.style.display = 'none';
-            }
-        });
-
-        let moversPosFilter = 'ALL';
-
-        function renderMovers() {
-            if (!historyData) return;
-            const { snapshots } = historyData;
-            const prev = snapshots[snapshots.length - 2];
-            const curr = snapshots[snapshots.length - 1];
-
-            document.getElementById('movers-subtitle').textContent =
-                `Comparing ${prev.label} to ${curr.label} (avg of DK + UD)`;
-            document.getElementById('title-rising-dk').textContent = `Rising on DraftKings (${prev.label} → ${curr.label})`;
-            document.getElementById('title-falling-dk').textContent = `Falling on DraftKings (${prev.label} → ${curr.label})`;
-            document.getElementById('title-rising-ud').textContent = `Rising on Underdog (${prev.label} → ${curr.label})`;
-            document.getElementById('title-falling-ud').textContent = `Falling on Underdog (${prev.label} → ${curr.label})`;
-
-            const allKeys = new Set([
-                ...Object.keys(prev.dkMap), ...Object.keys(curr.dkMap),
-                ...Object.keys(prev.udMap), ...Object.keys(curr.udMap)
-            ]);
-
-            const dkMovers = [], udMovers = [];
-            for (const key of allKeys) {
-                const info = historyData.playerIndex[key];
-                if (!info || !info.name) continue;
-                if (moversPosFilter !== 'ALL' && info.pos !== moversPosFilter) continue;
-
-                const prevDk = prev.dkMap[key] ? prev.dkMap[key].adp : null;
-                const currDk = curr.dkMap[key] ? curr.dkMap[key].adp : null;
-                const prevUd = prev.udMap[key] ? prev.udMap[key].adp : null;
-                const currUd = curr.udMap[key] ? curr.udMap[key].adp : null;
-
-                if (prevDk !== null && currDk !== null) {
-                    dkMovers.push({ name: info.name, pos: info.pos, prev: prevDk, curr: currDk, delta: currDk - prevDk });
-                }
-                if (prevUd !== null && currUd !== null) {
-                    udMovers.push({ name: info.name, pos: info.pos, prev: prevUd, curr: currUd, delta: currUd - prevUd });
-                }
-            }
-
-            function moverHTML(list, cls) {
-                return list.map((p, i) => `<li>
-                    <span class="rec-rank">${i + 1}.</span>
-                    <span class="rec-name">${p.name}</span>
-                    <span class="rec-pos"><span class="pos-badge pos-${p.pos}">${p.pos}</span></span>
-                    <span class="rec-adps">${p.prev.toFixed(1)} → ${p.curr.toFixed(1)}</span>
-                    <span class="rec-val ${cls}">${p.delta > 0 ? '+' : ''}${p.delta.toFixed(1)}</span>
-                </li>`).join('');
-            }
-
-            // Rising = ADP number fell (drafted earlier now)
-            const risingDk = [...dkMovers].sort((a, b) => a.delta - b.delta).slice(0, 10);
-            const fallingDk = [...dkMovers].sort((a, b) => b.delta - a.delta).slice(0, 10);
-            const risingUd = [...udMovers].sort((a, b) => a.delta - b.delta).slice(0, 10);
-            const fallingUd = [...udMovers].sort((a, b) => b.delta - a.delta).slice(0, 10);
-
-            document.getElementById('rec-rising-dk').innerHTML = moverHTML(risingDk, 'rising');
-            document.getElementById('rec-falling-dk').innerHTML = moverHTML(fallingDk, 'falling');
-            document.getElementById('rec-rising-ud').innerHTML = moverHTML(risingUd, 'rising');
-            document.getElementById('rec-falling-ud').innerHTML = moverHTML(fallingUd, 'falling');
-        }
-
-        document.querySelectorAll('.movers-pos-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.movers-pos-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                moversPosFilter = btn.dataset.pos;
-                renderMovers();
-            });
-        });
-
-        loadHistoryData();
     </script>
 </body>
 </html>
