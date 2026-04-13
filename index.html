@@ -531,7 +531,7 @@
                     const adp = parseFloat(r[3]);
                     udMap[normalizeName(name)] = { name, pos: r[6] || '', adp: isNaN(adp) ? null : adp };
                 }
-                return { label: s.label, dkMap, udMap };
+                return { label: s.label, date: s.date, dkMap, udMap };
             }));
 
             const allKeys = new Set();
