@@ -553,14 +553,15 @@
         function renderMovers() {
             const { snapshots, playerIndex } = historyData;
             const curr = snapshots[snapshots.length - 1];
-            const currDate = new Date(curr.date);
+            // Parse date as local to avoid timezone shifting
+            const parseDate = str => { const [y,m,d] = str.split('-'); return new Date(y, m-1, d); };
+            const currDate = parseDate(curr.date);
             const weekAgo = new Date(currDate);
             weekAgo.setDate(weekAgo.getDate() - 7);
             // Pick snapshot closest to 7 days ago, excluding curr
             const prev = snapshots.slice(0, -1).reduce((best, s) => {
-                const d = new Date(s.date);
-                const bestDiff = Math.abs(new Date(best.date) - weekAgo);
-                const thisDiff = Math.abs(d - weekAgo);
+                const thisDiff = Math.abs(parseDate(s.date) - weekAgo);
+                const bestDiff = Math.abs(parseDate(best.date) - weekAgo);
                 return thisDiff < bestDiff ? s : best;
             }, snapshots[0]);
             document.getElementById('movers-subtitle').textContent = `Comparing ${prev.label} to ${curr.label} (closest available to 7 days)`;
