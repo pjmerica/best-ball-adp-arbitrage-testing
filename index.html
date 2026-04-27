@@ -248,6 +248,13 @@
 
     <!-- TAB 2: HISTORY & MOVERS -->
     <div class="tab-panel" id="tab-history">
+        <div style="display:flex;justify-content:center;margin-bottom:20px;">
+            <div class="pos-filters">
+                <button class="pos-btn era-btn" data-era="pre">Pre-draft</button>
+                <button class="pos-btn era-btn" data-era="post">Post-draft</button>
+                <button class="pos-btn era-btn active" data-era="all">Combined</button>
+            </div>
+        </div>
         <h2 class="section-title">Largest ADP Movers</h2>
         <p class="section-sub" id="movers-subtitle">loading...</p>
         <div style="display:flex;justify-content:center;margin-bottom:16px;">
@@ -492,25 +499,26 @@
 
         // ── TAB 2: HISTORY & MOVERS ───────────────────────────────────
         const SNAPSHOTS = [
-            { label: 'Mar 17', date: '2026-03-17', dk: 'dk_adp_2026-03-17.csv', ud: 'ud_adp_2026-03-17.csv' },
-            { label: 'Mar 23', date: '2026-03-23', dk: 'dk_adp_2026-03-23.csv', ud: 'ud_adp_2026-03-23.csv' },
-            { label: 'Apr 6',  date: '2026-04-06', dk: 'dk_adp_2026-04-06.csv', ud: 'ud_adp_2026-04-06.csv' },
-            { label: 'Apr 7',  date: '2026-04-07', dk: 'dk_adp_2026-04-07.csv', ud: 'ud_adp_2026-04-07.csv' },
-            { label: 'Apr 8',  date: '2026-04-08', dk: 'dk_adp_2026-04-08.csv', ud: 'ud_adp_2026-04-08.csv' },
-            { label: 'Apr 9',  date: '2026-04-09', dk: 'dk_adp_2026-04-09.csv', ud: 'ud_adp_2026-04-09.csv' },
-            { label: 'Apr 10', date: '2026-04-10', dk: 'dk_adp_2026-04-10.csv', ud: 'ud_adp_2026-04-10.csv' },
-            { label: 'Apr 11', date: '2026-04-11', dk: 'dk_adp_2026-04-11.csv', ud: 'ud_adp_2026-04-11.csv' },
-            { label: 'Apr 12', date: '2026-04-12', dk: 'dk_adp_2026-04-12.csv', ud: 'ud_adp_2026-04-12.csv' },
-            { label: 'Apr 13', date: '2026-04-13', dk: 'dk_adp_2026-04-13.csv', ud: 'ud_adp_2026-04-13.csv' },
-            { label: 'Apr 14', date: '2026-04-14', dk: 'dk_adp_2026-04-14.csv', ud: 'ud_adp_2026-04-14.csv' },
-            { label: 'Apr 15', date: '2026-04-15', dk: 'dk_adp_2026-04-15.csv', ud: 'ud_adp_2026-04-15.csv' },
-            { label: 'Apr 16', date: '2026-04-16', dk: 'dk_adp_2026-04-16.csv', ud: 'ud_adp_2026-04-16.csv' },
-            { label: 'Apr 17', date: '2026-04-17', dk: 'dk_adp_2026-04-17.csv', ud: 'ud_adp_2026-04-17.csv' },
-            { label: 'Apr 18', date: '2026-04-18', dk: 'dk_adp_2026-04-18.csv', ud: 'ud_adp_2026-04-18.csv' },
-            { label: 'Apr 19', date: '2026-04-19', dk: 'dk_adp_2026-04-19.csv', ud: 'ud_adp_2026-04-19.csv' },
-            { label: 'Apr 20', date: '2026-04-20', dk: 'dk_adp_2026-04-20.csv', ud: 'ud_adp_2026-04-20.csv' },
-            { label: 'Apr 21', date: '2026-04-21', dk: 'dk_adp_2026-04-21.csv', ud: 'ud_adp_2026-04-21.csv' },
-            { label: 'Apr 22', date: '2026-04-22', dk: 'dk_adp_2026-04-22.csv', ud: 'ud_adp_2026-04-22.csv' },
+            { label: 'Mar 17', date: '2026-03-17', era: 'pre',  dk: 'dk_adp_2026-03-17.csv', ud: 'ud_adp_2026-03-17.csv' },
+            { label: 'Mar 23', date: '2026-03-23', era: 'pre',  dk: 'dk_adp_2026-03-23.csv', ud: 'ud_adp_2026-03-23.csv' },
+            { label: 'Apr 6',  date: '2026-04-06', era: 'pre',  dk: 'dk_adp_2026-04-06.csv', ud: 'ud_adp_2026-04-06.csv' },
+            { label: 'Apr 7',  date: '2026-04-07', era: 'pre',  dk: 'dk_adp_2026-04-07.csv', ud: 'ud_adp_2026-04-07.csv' },
+            { label: 'Apr 8',  date: '2026-04-08', era: 'pre',  dk: 'dk_adp_2026-04-08.csv', ud: 'ud_adp_2026-04-08.csv' },
+            { label: 'Apr 9',  date: '2026-04-09', era: 'pre',  dk: 'dk_adp_2026-04-09.csv', ud: 'ud_adp_2026-04-09.csv' },
+            { label: 'Apr 10', date: '2026-04-10', era: 'pre',  dk: 'dk_adp_2026-04-10.csv', ud: 'ud_adp_2026-04-10.csv' },
+            { label: 'Apr 11', date: '2026-04-11', era: 'pre',  dk: 'dk_adp_2026-04-11.csv', ud: 'ud_adp_2026-04-11.csv' },
+            { label: 'Apr 12', date: '2026-04-12', era: 'pre',  dk: 'dk_adp_2026-04-12.csv', ud: 'ud_adp_2026-04-12.csv' },
+            { label: 'Apr 13', date: '2026-04-13', era: 'pre',  dk: 'dk_adp_2026-04-13.csv', ud: 'ud_adp_2026-04-13.csv' },
+            { label: 'Apr 14', date: '2026-04-14', era: 'pre',  dk: 'dk_adp_2026-04-14.csv', ud: 'ud_adp_2026-04-14.csv' },
+            { label: 'Apr 15', date: '2026-04-15', era: 'pre',  dk: 'dk_adp_2026-04-15.csv', ud: 'ud_adp_2026-04-15.csv' },
+            { label: 'Apr 16', date: '2026-04-16', era: 'pre',  dk: 'dk_adp_2026-04-16.csv', ud: 'ud_adp_2026-04-16.csv' },
+            { label: 'Apr 17', date: '2026-04-17', era: 'pre',  dk: 'dk_adp_2026-04-17.csv', ud: 'ud_adp_2026-04-17.csv' },
+            { label: 'Apr 18', date: '2026-04-18', era: 'pre',  dk: 'dk_adp_2026-04-18.csv', ud: 'ud_adp_2026-04-18.csv' },
+            { label: 'Apr 19', date: '2026-04-19', era: 'pre',  dk: 'dk_adp_2026-04-19.csv', ud: 'ud_adp_2026-04-19.csv' },
+            { label: 'Apr 20', date: '2026-04-20', era: 'pre',  dk: 'dk_adp_2026-04-20.csv', ud: 'ud_adp_2026-04-20.csv' },
+            { label: 'Apr 21', date: '2026-04-21', era: 'pre',  dk: 'dk_adp_2026-04-21.csv', ud: 'ud_adp_2026-04-21.csv' },
+            { label: 'Apr 22', date: '2026-04-22', era: 'pre',  dk: 'dk_adp_2026-04-22.csv', ud: 'ud_adp_2026-04-22.csv' },
+            { label: 'Apr 27', date: '2026-04-27', era: 'post', dk: 'dk_adp_2026-04-27.csv', ud: 'ud_adp_2026-04-27.csv' },
         ];
         const COLORS = ['#4a9eff','#e74c3c','#2ecc71','#f39c12','#9b59b6','#1abc9c','#e67e22','#e91e63','#00bcd4','#8bc34a'];
 
@@ -518,6 +526,13 @@
         let adpChart = null;
         let selectedPlayers = [];
         let moversPosFilter = 'ALL';
+        let eraFilter = 'all'; // 'pre' | 'post' | 'all'
+
+        function getActiveSnapshots() {
+            if (!historyData) return [];
+            if (eraFilter === 'all') return historyData.snapshots;
+            return historyData.snapshots.filter(s => s.era === eraFilter);
+        }
 
         async function loadHistoryData() {
             const snapshots = await Promise.all(SNAPSHOTS.map(async s => {
@@ -540,7 +555,7 @@
                     const adp = parseFloat(r[3]);
                     udMap[normalizeName(name)] = { name, pos: r[6] || '', adp: isNaN(adp) ? null : adp };
                 }
-                return { label: s.label, date: s.date, dkMap, udMap };
+                return { label: s.label, date: s.date, era: s.era, dkMap, udMap };
             }));
 
             const allKeys = new Set();
@@ -560,7 +575,16 @@
         }
 
         function renderMovers() {
-            const { snapshots, playerIndex } = historyData;
+            const { playerIndex } = historyData;
+            const snapshots = getActiveSnapshots();
+            const movers = ['rec-rising-dk','rec-falling-dk','rec-rising-ud','rec-falling-ud'];
+            if (snapshots.length < 2) {
+                document.getElementById('movers-subtitle').textContent = snapshots.length === 0
+                    ? 'No snapshots in this era yet.'
+                    : `Only one snapshot available (${snapshots[0].label}) — need at least 2 to compute movers.`;
+                movers.forEach(id => document.getElementById(id).innerHTML = '');
+                return;
+            }
             const curr = snapshots[snapshots.length - 1];
             // Parse date as local to avoid timezone shifting
             const parseDate = str => { const [y,m,d] = str.split('-'); return new Date(y, m-1, d); };
@@ -606,7 +630,8 @@
         }
 
         function renderChart() {
-            const { snapshots, playerIndex } = historyData;
+            const { playerIndex } = historyData;
+            const snapshots = getActiveSnapshots();
             const labels = snapshots.map(s => s.label);
             const canvas = document.getElementById('adp-chart');
             const empty = document.getElementById('chart-empty');
@@ -704,6 +729,16 @@
                 btn.classList.add('active');
                 moversPosFilter = btn.dataset.pos;
                 renderMovers();
+            });
+        });
+
+        document.querySelectorAll('.era-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.era-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                eraFilter = btn.dataset.era;
+                renderMovers();
+                renderChart();
             });
         });
 
