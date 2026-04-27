@@ -531,7 +531,12 @@
         function getActiveSnapshots() {
             if (!historyData) return [];
             if (eraFilter === 'all') return historyData.snapshots;
-            return historyData.snapshots.filter(s => s.era === eraFilter);
+            if (eraFilter === 'pre') return historyData.snapshots.filter(s => s.era === 'pre');
+            // Post-draft: anchor with the last pre-draft snapshot so movers/chart have something
+            // to compare against until multiple post-draft snapshots exist.
+            const post = historyData.snapshots.filter(s => s.era === 'post');
+            const lastPre = [...historyData.snapshots].reverse().find(s => s.era === 'pre');
+            return lastPre ? [lastPre, ...post] : post;
         }
 
         async function loadHistoryData() {
