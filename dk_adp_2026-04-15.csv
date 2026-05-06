@@ -1,395 +1,373 @@
 ID,Name,Position,ADP,Team,,Instructions
-1228244,Bijan Robinson,RB,1.5087674,ATL,,1. Rank players in column A and B in order of how you would like them to appear in your pre-draft rankings.
-1214154,Jahmyr Gibbs,RB,1.810259,DET,,2. Note: The ID in column A is what will determine the order of the pre-draft rankings. Remember to keep these next to the corresponding player. You must include an ID for each player; you cannot use just the player's name.
-1109979,Ja'Marr Chase,WR,3.2912886,CIN,,3. Upload as a CSV file and save ranking.
-1162128,Puka Nacua,WR,3.9835665,LAR
-1214087,Jaxon Smith-Njigba,WR,5.2708507,SEA
-830517,Christian McCaffrey,RB,6.0786567,SF
-1065406,Jonathan Taylor,RB,7.615156,IND
-1069535,Justin Jefferson,WR,8.438266,MIN
-1127106,Amon-Ra St. Brown,WR,8.810593,DET
-1131012,James Cook III,RB,10.567209,BUF
-1062020,CeeDee Lamb,WR,10.831407,DAL
-1379646,Ashton Jeanty,RB,12.544984,LV
-1231820,De'Von Achane,RB,13.68436,MIA
-883302,Saquon Barkley,RB,14.454447,PHI
-1164402,Kenneth Walker III,RB,15.828744,KC
-1173538,Rashee Rice,WR,16.291643,KC
-1108161,Trey McBride,TE,18.306072,ARI
-1178741,Drake London,WR,18.770319,ATL
-868199,Josh Allen,QB,20.870924,BUF
-1398572,Omarion Hampton,RB,20.194912,LAC
-1123379,Chase Brown,RB,20.916006,CIN
-1286059,Malik Nabers,WR,21.724064,NYG
-732145,Derrick Henry,RB,22.303022,BAL
-1285917,Brock Bowers,TE,23.091143,LV
-1451501,Jeremiyah Love,RB,25.284798,ARI
-1172053,George Pickens,WR,25.669376,DAL
-1074698,Nico Collins,WR,26.744461,HOU
-944826,A.J. Brown,WR,28.529814,PHI
-944416,Josh Jacobs,RB,29.833445,GB
-1122592,Chris Olave,WR,29.260452,NO
-1167361,Kyren Williams,RB,31.247189,LAR
-1060262,DeVonta Smith,WR,32.88537,PHI
-978577,Travis Etienne Jr.,RB,33.936028,NO
-978579,Tee Higgins,WR,34.93749,CIN
-1287825,Emeka Egbuka,WR,35.885273,TB
-1380576,Tetairoa McMillan,WR,36.822586,CAR
-1162537,Breece Hall,RB,37.856777,NYJ
-1164889,Garrett Wilson,WR,38.44104,NYJ
-1107881,Javonte Williams,RB,39.240055,DAL
-1378821,Colston Loveland,TE,41.79824,CHI
-1177053,Zay Flowers,WR,40.451775,BAL
-877745,Lamar Jackson,QB,44.632187,BAL
-877790,DJ Moore,WR,43.098328,BUF
-1287923,Bucky Irving,RB,44.560436,TB
-1280316,Cam Skattebo,RB,45.035355,NYG
-1377732,Luther Burden III,WR,48.054363,CHI
-611417,Davante Adams,WR,46.06225,LAR
-1218643,Ladd McConkey,WR,46.90201,LAC
-878785,Joe Burrow,QB,51.19069,CIN
-1125749,Jaylen Waddle,WR,50.478436,DEN
-1383807,Quinshon Judkins,RB,51.27976,CLE
-593587,Mike Evans,WR,52.818356,SF
-1175184,Jameson Williams,WR,53.231346,DET
-946739,David Montgomery,RB,54.268,HOU
-836116,Terry McLaurin,WR,54.394432,WAS
-1287837,TreVeyon Henderson,RB,56.20612,NE
-1069808,D'Andre Swift,RB,57.29176,CHI
-1213727,Rome Odunze,WR,58.226982,CHI
-1229083,Tyler Warren,TE,61.14951,IND
-1286803,Drake Maye,QB,61.830917,NE
-1383791,Jadarian Price,RB,58.73528,SEA
-1327169,Bhayshul Tuten,RB,64.396515,JAX
-1067918,Christian Watson,WR,61.386944,GB
-1286445,Caleb Williams,QB,66.433716,CHI
-1441839,Carnell Tate,WR,65.31252,TEN
-1161228,Jayden Daniels,QB,67.023834,WAS
-1229074,Parker Washington,WR,67.19248,JAX
-1287828,Marvin Harrison Jr.,WR,67.66038,ARI
-913271,Jalen Hurts,QB,70.77739,PHI
-1107027,Alec Pierce,WR,70.78661,IND
-1394692,Jordyn Tyson,WR,70.14071,NO
-1062047,Chuba Hubbard,RB,71.417564,CAR
-591816,Dak Prescott,QB,74.535194,DAL
-1181874,Tucker Kraft,TE,74.81416,GB
-1286064,Brian Thomas Jr.,WR,75.906494,JAX
-1441120,Makai Lemon,WR,78.66477,PHI
-1172401,RJ Harvey,RB,77.13278,DEN
-1174682,Rhamondre Stevenson,RB,78.14885,NE
-1394752,Harold Fannin Jr.,TE,80.74854,CLE
-1123529,Michael Wilson,WR,79.91194,ARI
-945633,DK Metcalf,WR,80.105515,PIT
-839031,Patrick Mahomes,QB,84.4769,KC
-838878,Courtland Sutton,WR,83.264496,DEN
-1110711,Trevor Lawrence,QB,85.5237,JAX
-880398,Tony Pollard,RB,82.12928,TEN
-1286260,Jaxson Dart,QB,86.868164,NYG
-323205,Matthew Stafford,QB,88.41702,LAR
-1168926,Sam LaPorta,TE,87.30184,DET
-835127,Chris Godwin Jr.,WR,88.260254,TB
-1176443,Jaylen Warren,RB,90.08174,PIT
-1214250,Jordan Addison,WR,90.529076,MIN
-1123026,Kyle Pitts Sr.,TE,92.394554,ATL
-733672,George Kittle,TE,93.46097,SF
-910562,Justin Herbert,QB,93.569725,LAC
-933480,Rico Dowdle,RB,94.23421,PIT
-1123398,Jayden Reed,WR,95.04595,GB
-1161899,Bo Nix,QB,99.02891,DEN
-1250886,Kyle Monangai,RB,97.043945,CHI
-1121761,Brock Purdy,QB,99.62124,SF
-1164875,Wan'Dale Robinson,WR,100.54309,TEN
-880151,Jakobi Meyers,WR,101.27519,JAX
-727837,Jared Goff,QB,102.74021,DET
-1122653,Romeo Doubs,WR,106.59128,NE
-1229540,Blake Corum,RB,102.831436,LAR
-1161416,Ricky Pearsall,WR,107.073875,SF
-879799,Kyler Murray,QB,107.2573,MIN
-912137,Jordan Love,QB,108.80964,GB
-1213865,Quentin Johnston,WR,104.06502,LAC
-976513,J.K. Dobbins,RB,107.47875,DEN
-1110306,Tyler Shough,QB,110.82464,NO
-911348,Michael Pittman Jr.,WR,111.07857,PIT
-1135513,Dalton Kincaid,TE,110.54332,BUF
-1164530,Zach Charbonnet,RB,115.34632,SEA
-1379267,Matthew Golden,WR,112.48927,GB
-448240,Travis Kelce,TE,115.64419,KC
-748070,Baker Mayfield,QB,115.885025,TB
-1215077,Josh Downs,WR,114.141304,IND
-1441576,KC Concepcion,WR,119.75723,CLE
-1325624,Oronde Gadsden II,TE,119.05948,LAC
-1326638,Xavier Worthy,WR,121.99071,KC
-791365,Dallas Goedert,TE,122.39599,PHI
-1130705,Kenneth Gainwell,RB,118.44891,TB
-1130603,Khalil Shakir,WR,123.07448,BUF
-1125111,Isaiah Likely,TE,125.46556,NYG
-1065361,Jake Ferguson,TE,127.12048,DAL
-1116001,Jordan Mason,RB,126.2967,MIN
-976323,Malik Willis,QB,128.24902,MIA
-880026,Sam Darnold,QB,130.01173,SEA
-1191186,Jacory Croskey-Merritt,RB,122.37022,WAS
-741314,Aaron Jones Sr.,RB,128.31448,MIN
-1218753,Jalen Coker,WR,132.09587,CAR
-1229343,Rachaad White,RB,133.95723,WAS
-1444547,Kenyon Sadiq,TE,137.19093,NYJ
-1326601,Jonathon Brooks,RB,130.3504,CAR
-1274492,Jayden Higgins,WR,135.17781,HOU
-820699,Mark Andrews,TE,136.24506,BAL
-1214084,C.J. Stroud,QB,137.35046,HOU
-1113403,Chris Rodriguez Jr.,RB,130.11153,JAX
-879981,Daniel Jones,QB,139.16211,IND
-1228691,Cam Ward,QB,140.52919,TEN
-1109708,Tyrone Tracy Jr.,RB,139.74638,NYG
-1213726,Jalen McMillan,WR,141.38661,TB
-1394825,Omar Cooper Jr.,WR,146.343,NYJ
-923412,Rashid Shaheed,WR,144.06056,SEA
-1213257,Bryce Young,QB,145.66606,CAR
-1164940,Brenton Strange,TE,148.21477,JAX
-823156,Tyreek Hill,WR,147.47812,FA
-1231652,Woody Marks,RB,146.3462,HOU
-1131198,Tyler Allgeier,RB,154.66382,ARI
-884609,Juwan Johnson,TE,149.80481,NO
-1106832,Isiah Pacheco,RB,147.56184,DET
-744425,Hunter Henry,TE,151.79884,NE
-1400786,Fernando Mendoza,QB,154.3274,LV
-1107034,Brandon Aiyuk,WR,160.07143,SF
-1106374,Chig Okonkwo,TE,153.93866,WAS
-607047,Jacoby Brissett,QB,155.66908,ARI
-1399275,Travis Hunter,WR,156.95894,JAX
-867009,Jauan Jennings,WR,159.05527,FA
-1379904,Denzel Boston,WR,163.50958,CLE
-750846,Alvin Kamara,RB,159.5858,NO
-923915,T.J. Hockenson,TE,159.44846,MIN
-1222789,Keaton Mitchell,RB,161.21799,LAC
-694041,Stefon Diggs,WR,163.28284,FA
-1169430,Tyjae Spears,RB,162.95343,TEN
-513856,Geno Smith,QB,166.14626,NYJ
-1441362,Isaac TeSlaa,WR,168.89566,DET
-1126817,Jalen Nailor,WR,163.95013,LV
-830523,Dalton Schultz,TE,168.87508,HOU
-1380594,Jonah Coleman,RB,166.59457,DEN
-1229503,AJ Barner,TE,171.28964,SEA
-973935,Jerry Jeudy,WR,174.2003,CLE
-973966,Brian Robinson Jr.,RB,172.36784,ATL
-1289428,Mike Washington Jr.,RB,179.92435,LV
-835749,Deebo Samuel Sr.,WR,178.30353,FA
-884013,Calvin Ridley,WR,178.44115,TEN
-1164979,Tre Tucker,WR,169.84573,LV
-1399910,Dylan Sampson,RB,174.32309,CLE
-1213362,Kayshon Boutte,WR,181.3394,NE
-1128222,Tank Dell,WR,183.30225,HOU
-1286065,Eli Stowers,TE,182.05887,PHI
-1049263,Cade Otton,TE,183.9617,TB
-1173255,Malik Washington,WR,181.59866,MIA
-1447759,Emanuel Wilson,RB,186.72556,SEA
-213957,Aaron Rodgers,QB,188.46805,FA
-865801,Christian Kirk,WR,194.93736,SF
-1380613,Germie Bernard,WR,193.14706,PIT
-1379264,Nick Singleton,RB,182.22023,TEN
-1286438,Gunnar Helm,TE,187.85529,TEN
-1214633,Tre' Harris,WR,196.73358,LAC
-1286818,De'Zhaun Stribling,WR,183.81606,SF
-1272321,Shedeur Sanders,QB,200.68947,CLE
-698227,Cooper Kupp,WR,195.93813,SEA
-1060312,Colby Parkinson,TE,190.9033,LAR
-742390,James Conner,RB,201.18382,ARI
-1378290,Antonio Williams,WR,183.30138,WAS
-1379251,Emmett Johnson,RB,195.4387,KC
-1215035,Tank Bigsby,RB,191.62802,PHI
-973947,Tua Tagovailoa,QB,199.61702,ATL
-1325231,Braelon Allen,RB,197.77707,NYJ
-1389700,Chris Bell,WR,187.22658,MIA
-1214824,Kimani Vidal,RB,202.62282,LAC
-1116662,Pat Freiermuth,TE,202.89717,PIT
-832098,David Njoku,TE,200.95949,FA
-1393832,Ryan Flournoy,WR,198.4747,DAL
-1285908,Adonai Mitchell,WR,206.79967,NYJ
-1379259,Kaytron Allen,RB,203.55902,WAS
-1172428,Dontayvion Wicks,WR,210.5277,PHI
-1165229,Ray Davis,RB,206.76521,BUF
-1223393,Tory Horton,WR,210.78722,SEA
-912027,Darnell Mooney,WR,211.6433,NYG
-403308,Kirk Cousins,QB,213.72748,LV
-1286176,Troy Franklin,WR,211.83618,DEN
-828743,Deshaun Watson,QB,207.59163,CLE
-1107478,Michael Penix Jr.,QB,216.47046,ATL
-1441110,Zachariah Branch,WR,214.3464,ATL
-1286179,Terrance Ferguson,TE,213.56836,LAR
-1228633,Sean Tucker,RB,215.65303,TB
-1322431,Keon Coleman,WR,214.80482,BUF
-1390910,Demond Claiborne,RB,216.02846,MIN
-1068872,Jake Tonges,TE,217.20767,SF
-1400788,Chris Brazzell II,WR,221.30797,CAR
-1110681,Justin Fields,QB,225.2783,KC
-1287599,J.J. McCarthy,QB,223.8515,MIN
-1124664,Cedric Tillman,WR,227.3457,CLE
-1319589,Malachi Fields,WR,217.448,NYG
-1213340,Carson Beck,QB,224.3768,ARI
-923109,Justice Hill,RB,218.52608,BAL
-1377766,Ollie Gordon II,RB,222.81995,MIA
-749185,Evan Engram,TE,221.42993,DEN
-1213782,Will Howard,QB,223.39743,PIT
-1128085,Greg Dulcich,TE,218.90536,MIA
-1290165,Riley Leonard,QB,225.5676,IND
-1400657,Jordan James,RB,224.57892,SF
-746613,Kareem Hunt,RB,225.50375,FA
-557210,Keenan Allen,WR,225.67648,FA
-560241,DeAndre Hopkins,WR,227.09724,FA
-1164846,Luke McCaffrey,WR,226.39297,WAS
-702808,Mack Hollins,WR,225.15984,NE
-1215022,Anthony Richardson Sr.,QB,224.5862,IND
-1383993,Kaden Wetjen,WR,230.1,PIT
-820727,Joe Mixon,RB,225.7454,FA
-589984,Odell Beckham Jr.,WR,227.0244,FA
-973945,Mac Jones,QB,229.4144,SF
-1379258,Drew Allar,QB,223.3596,PIT
-1215772,Kaelon Black,RB,221.61586,SF
-1394803,Trevor Etienne,RB,226.39113,CAR
-976220,Hollywood Brown,WR,228.6768,PHI
-1175693,DeMario Douglas,WR,228.17476,NE
-1521285,Ted Hurst,WR,220.43623,TB
-1214689,Jaylin Lane,WR,228.9048,WAS
-1313668,Brashard Smith,RB,225.25877,KC
-1293066,Devin Neal,RB,226.3529,NO
-1214405,KeAndre Lambert-Smith,WR,229.93944,LAC
-916466,Devin Singletary,RB,226.8873,NYG
-692660,Kalif Raymond,WR,228.5393,CHI
-1213799,Marvin Mims Jr.,WR,226.0169,DEN
-1126338,Isaac Guerendo,RB,230.7619,SF
-1215102,Chimere Dike,WR,227.53876,TEN
-1305866,Pat Bryant,WR,225.75266,DEN
-1289332,Konata Mumpfield,WR,,LAR
-1321291,Audric Estime,RB,228.1781,NO
-1180625,George Holani,RB,227.34103,SEA
-1116817,Emari Demercado,RB,229.6667,KC
-973964,Najee Harris,RB,226.67351,FA
-975028,Malik Davis,RB,227.27966,DAL
-1378917,Ty Simpson,QB,233.1702,LAR
-1271609,Isaiah Davis,RB,231.8421,NYJ
-1179790,Luke Musgrave,TE,230.7368,GB
-1108208,Rashod Bateman,WR,226.3027,BAL
-836152,Mike Gesicki,TE,223.31665,CIN
-1056981,Noah Gray,TE,232.2581,KC
-503177,Zach Ertz,TE,225.85057,FA
-1277947,J'Mari Taylor,RB,226.6857,JAX
-1180321,Xavier Legette,WR,227.6821,CAR
-1395874,Eli Heidenreich,WR,227.8572,PIT
-1160348,John Metchie III,WR,231.25,CAR
-1218658,Darnell Washington,TE,229.74608,PIT
-754412,Kendrick Bourne,WR,228.1092,ARI
-1248031,Trey Benson,RB,225.57358,ARI
-1213636,Xavier Hutchinson,WR,228.8525,HOU
-1122182,Dylan Laube,RB,,LV
-1226616,CJ Daniels,WR,228.87836,LAR
-600191,Darren Waller,TE,227.3871,FA
-1378284,Adam Randall,RB,228.9904,BAL
-1378898,Jaydon Blue,RB,228.87682,DAL
-1398153,Zavion Thomas,WR,227.6457,CHI
-1287636,Will Shipley,RB,227.325,PHI
-1381105,Oscar Delp,TE,229.2138,NO
-1066424,Jalen Tolbert,WR,227.8535,MIA
-1441191,Malik Benson,WR,226.115,LV
-877784,Ty Johnson,RB,227.9721,BUF
-1066765,Cole Kmet,TE,227.8618,CHI
-1380368,Tanner Koziol,TE,234.9167,JAX
-790004,Austin Ekeler,RB,223.009,FA
-820734,Samaje Perine,RB,226.07298,CIN
-1062765,Calvin Austin III,WR,229.67444,NYG
-1392584,Elijah Sarratt,WR,225.73325,BAL
-1378156,Sam Roush,TE,228,CHI
-1110301,Tyquan Thornton,WR,227.41473,KC
-1127065,Chris Brooks,RB,228.60924,GB
-865958,KaVontae Turpin,WR,226.9162,DAL
-607843,Marcus Mariota,QB,234.2,WAS
-1381902,Kaleb Johnson,RB,230.28,PIT
-1325234,Skyler Bell,WR,228.0675,BUF
-1106760,Tutu Atwell,WR,231.15,MIA
-1227157,Kyle Williams,WR,230.8525,NE
-1228730,Tahj Brooks,RB,228.699,CIN
-1286370,Jaylin Noel,WR,227.6542,HOU
-1214414,Theo Johnson,TE,226.89874,NYG
-1323708,Michael Trigg,TE,227.14777,DAL
-884083,Dawson Knox,TE,229.95976,BUF
-1107878,Dyami Brown,WR,227.05411,WAS
-1124851,Andrei Iosivas,WR,228.1694,CIN
-1287587,Tai Felton,WR,230.3,MIN
-1382670,Cyrus Allen,WR,228.16124,KC
-1286164,Dont'e Thornton Jr.,WR,229.7609,LV
-883259,Nick Westbrook-Ikhine,WR,228.1071,IND
-1381263,Mason Taylor,TE,230.63087,NYJ
-1325016,Bryce Lance,WR,227.3433,NO
-1403969,Eli Raridon,TE,228.3425,NE
-1287798,Deion Burks,WR,230.5517,IND
-1286840,Elijah Arroyo,TE,230.75691,SEA
-1398503,Isaiah Bond,WR,226.4714,CLE
-1394798,Caleb Douglas,WR,228.23627,MIA
-1288113,Taylen Green,QB,227.3478,CLE
-1164788,Devaughn Vele,WR,229.26102,NO
-1465213,Jahdae Walker,WR,229.7143,CHI
-1303569,DJ Giddens,RB,228.3182,IND
-691536,Jameis Winston,QB,228.6,NYG
-1401683,Max Klare,TE,230.7213,LAR
-1399132,Brenen Thompson,WR,227.85904,LAC
-1395319,Elic Ayomanor,WR,227.59886,TEN
-883976,Olamide Zaccheaus,WR,229.5714,ATL
-1286513,Jaylen Wright,RB,228.4431,MIA
-1458888,Ja'Kobi Lane,WR,230.28516,BAL
-604176,Tyler Higbee,TE,227.90083,LAR
-1378840,LeQuint Allen Jr.,RB,229.0268,JAX
-1228920,Ben Sinnott,TE,229.20508,WAS
-216342,Joe Flacco,QB,223.61542,CIN
-1277914,Devontez Walker,WR,226.70004,BAL
-1213414,MarShawn Lloyd,RB,227.8024,GB
-1232592,Michael Mayer,TE,230.375,LV
-880557,Darius Slayton,WR,228.05916,NYG
-1214837,Tez Johnson,WR,228.44048,TB
-1405928,Justin Joly,TE,229.9296,DEN
-1286046,Jack Bech,WR,228.9734,LV
-1399272,Kevin Coleman Jr.,WR,233.5455,MIA
-1121878,Jahan Dotson,WR,230.27379,ATL
-1172024,Treylon Burks,WR,227.7869,WAS
-1326628,Ja'Tavion Sanders,TE,231.2635,CAR
-1164533,Erick All Jr.,TE,229.75,CIN
-1378287,Cade Klubnik,QB,231.88,NYJ
-1125737,Jerome Ford,RB,226.241,WAS
-1213872,Savion Williams,WR,230.8444,GB
-1444140,Tyson Bagent,QB,,CHI
-1058648,Charlie Kolar,TE,232.8824,LAC
-1381164,Sione Vaki,RB,,DET
-1403491,Jalen Royals,WR,228.9474,KC
-1377757,Jaydn Ott,RB,,KC
-1317230,Roman Hemby,RB,,LV
-1213794,Seth McGowan,RB,,FA
-867303,Gardner Minshew II,QB,,ARI
-1324856,Eric McAlister,WR,,FA
-727279,Demarcus Robinson,WR,,SF
-1286037,Garrett Nussmeier,QB,,KC
+1228244,Bijan Robinson,RB,1.4078456,ATL,,1. Rank players in column A and B in order of how you would like them to appear in your pre-draft rankings.
+1214154,Jahmyr Gibbs,RB,1.8708202,DET,,2. Note: The ID in column A is what will determine the order of the pre-draft rankings. Remember to keep these next to the corresponding player. You must include an ID for each player; you cannot use just the player's name.
+1109979,Ja'Marr Chase,WR,3.2161424,CIN,,3. Upload as a CSV file and save ranking.
+1162128,Puka Nacua,WR,4.253327,LAR
+1214087,Jaxon Smith-Njigba,WR,5.1626754,SEA
+830517,Christian McCaffrey,RB,6.060246,SF
+1065406,Jonathan Taylor,RB,7.295305,IND
+1127106,Amon-Ra St. Brown,WR,8.279018,DET
+1069535,Justin Jefferson,WR,9.329342,MIN
+1062020,CeeDee Lamb,WR,10.313843,DAL
+1131012,James Cook III,RB,10.975748,BUF
+1379646,Ashton Jeanty,RB,12.219853,LV
+1231820,De'Von Achane,RB,13.696124,MIA
+1164402,Kenneth Walker III,RB,14.663561,KC
+883302,Saquon Barkley,RB,15.680518,PHI
+1108161,Trey McBride,TE,16.729736,ARI
+1398572,Omarion Hampton,RB,18.370129,LAC
+1451501,Jeremiyah Love,RB,18.549353,FA
+1178741,Drake London,WR,19.42913,ATL
+1286059,Malik Nabers,WR,19.661356,NYG
+1173538,Rashee Rice,WR,20.072134,KC
+1123379,Chase Brown,RB,22.507977,CIN
+732145,Derrick Henry,RB,22.878859,BAL
+1285917,Brock Bowers,TE,24.24002,LV
+868199,Josh Allen,QB,25.47547,BUF
+1172053,George Pickens,WR,25.726927,DAL
+1074698,Nico Collins,WR,26.712746,HOU
+1122592,Chris Olave,WR,27.723145,NO
+944416,Josh Jacobs,RB,29.12368,GB
+944826,A.J. Brown,WR,30.555994,PHI
+978577,Travis Etienne Jr.,RB,31.825764,NO
+1167361,Kyren Williams,RB,32.365723,LAR
+978579,Tee Higgins,WR,33.52711,CIN
+1380576,Tetairoa McMillan,WR,34.2049,CAR
+1287825,Emeka Egbuka,WR,35.327477,TB
+1164889,Garrett Wilson,WR,36.515682,NYJ
+1162537,Breece Hall,RB,37.23295,NYJ
+1107881,Javonte Williams,RB,38.944992,DAL
+1378821,Colston Loveland,TE,39.933723,CHI
+1177053,Zay Flowers,WR,40.755234,BAL
+877790,DJ Moore,WR,41.921734,BUF
+1060262,DeVonta Smith,WR,42.38915,PHI
+1287923,Bucky Irving,RB,42.885403,TB
+1377732,Luther Burden III,WR,44.549965,CHI
+1218643,Ladd McConkey,WR,45.02476,LAC
+593587,Mike Evans,WR,46.95766,SF
+611417,Davante Adams,WR,47.610134,LAR
+1383807,Quinshon Judkins,RB,49.01231,CLE
+1125749,Jaylen Waddle,WR,49.707035,DEN
+946739,David Montgomery,RB,50.65163,HOU
+1175184,Jameson Williams,WR,51.437954,DET
+877745,Lamar Jackson,QB,52.65763,BAL
+1287837,TreVeyon Henderson,RB,52.699177,NE
+836116,Terry McLaurin,WR,54.030308,WAS
+1280316,Cam Skattebo,RB,55.242863,NYG
+878785,Joe Burrow,QB,56.48842,CIN
+1213727,Rome Odunze,WR,56.65297,CHI
+1327169,Bhayshul Tuten,RB,57.989056,JAX
+1067918,Christian Watson,WR,59.51099,GB
+1229074,Parker Washington,WR,60.593475,JAX
+1069808,D'Andre Swift,RB,61.19062,CHI
+1229083,Tyler Warren,TE,62.84127,IND
+1441839,Carnell Tate,WR,64.14597,FA
+1107027,Alec Pierce,WR,65.28145,IND
+1286445,Caleb Williams,QB,65.328766,CHI
+1287828,Marvin Harrison Jr.,WR,66.22058,ARI
+1172401,RJ Harvey,RB,67.63126,DEN
+1286803,Drake Maye,QB,68.135735,NE
+1161228,Jayden Daniels,QB,68.89653,WAS
+1123529,Michael Wilson,WR,71.36978,ARI
+1062047,Chuba Hubbard,RB,72.0975,CAR
+913271,Jalen Hurts,QB,73.2553,PHI
+1441120,Makai Lemon,WR,73.52593,FA
+1286064,Brian Thomas Jr.,WR,74.06061,JAX
+1174682,Rhamondre Stevenson,RB,75.04004,NE
+1394752,Harold Fannin Jr.,TE,76.21833,CLE
+591816,Dak Prescott,QB,77.43555,DAL
+838878,Courtland Sutton,WR,78.43646,DEN
+1181874,Tucker Kraft,TE,79.585175,GB
+1110711,Trevor Lawrence,QB,80.946205,JAX
+835127,Chris Godwin Jr.,WR,81.470345,TB
+945633,DK Metcalf,WR,82.7608,PIT
+1394692,Jordyn Tyson,WR,83.793434,FA
+1176443,Jaylen Warren,RB,84.48398,PIT
+910562,Justin Herbert,QB,86.47817,LAC
+1286260,Jaxson Dart,QB,87.33918,NYG
+1164875,Wan'Dale Robinson,WR,87.70592,TEN
+933480,Rico Dowdle,RB,88.49732,PIT
+839031,Patrick Mahomes,QB,89.67488,KC
+1122653,Romeo Doubs,WR,90.807396,NE
+323205,Matthew Stafford,QB,91.33605,LAR
+1123026,Kyle Pitts Sr.,TE,92.81327,ATL
+1131198,Tyler Allgeier,RB,93.15858,ARI
+1168926,Sam LaPorta,TE,94.83015,DET
+1161416,Ricky Pearsall,WR,95.31225,SF
+880151,Jakobi Meyers,WR,97.30584,JAX
+1214250,Jordan Addison,WR,97.68934,MIN
+1121761,Brock Purdy,QB,98.02302,SF
+976513,J.K. Dobbins,RB,98.12114,DEN
+1161899,Bo Nix,QB,98.908966,DEN
+1250886,Kyle Monangai,RB,99.70908,CHI
+727837,Jared Goff,QB,102.9131,DET
+1213865,Quentin Johnston,WR,103.63105,LAC
+1229540,Blake Corum,RB,104.62354,LAR
+879799,Kyler Murray,QB,105.8408,MIN
+911348,Michael Pittman Jr.,WR,106.95111,PIT
+733672,George Kittle,TE,107.088486,SF
+912137,Jordan Love,QB,108.29541,GB
+1123398,Jayden Reed,WR,108.36374,GB
+1383791,Jadarian Price,RB,108.57082,FA
+880398,Tony Pollard,RB,111.44854,TEN
+748070,Baker Mayfield,QB,111.7637,TB
+1135513,Dalton Kincaid,TE,114.35856,BUF
+1130705,Kenneth Gainwell,RB,115.48142,TB
+1164530,Zach Charbonnet,RB,116.06728,SEA
+1325624,Oronde Gadsden II,TE,116.442535,LAC
+1215077,Josh Downs,WR,117.04076,IND
+1326638,Xavier Worthy,WR,118.25823,KC
+1110306,Tyler Shough,QB,119.088486,NO
+1130603,Khalil Shakir,WR,120.51917,BUF
+1441576,KC Concepcion,WR,121.36308,FA
+791365,Dallas Goedert,TE,121.6571,PHI
+1379267,Matthew Golden,WR,123.73591,GB
+1218753,Jalen Coker,WR,125.044685,CAR
+976323,Malik Willis,QB,125.52627,MIA
+1065361,Jake Ferguson,TE,126.16388,DAL
+1116001,Jordan Mason,RB,126.99872,MIN
+448240,Travis Kelce,TE,127.13735,KC
+880026,Sam Darnold,QB,129.0858,SEA
+1229343,Rachaad White,RB,131.88634,WAS
+1444547,Kenyon Sadiq,TE,132.13263,FA
+1274492,Jayden Higgins,WR,132.18854,HOU
+1113403,Chris Rodriguez Jr.,RB,133.5922,JAX
+1125111,Isaiah Likely,TE,134.36496,NYG
+1214084,C.J. Stroud,QB,135.38469,HOU
+1213726,Jalen McMillan,WR,135.5045,TB
+879981,Daniel Jones,QB,137.3003,IND
+741314,Aaron Jones Sr.,RB,137.80977,MIN
+1191186,Jacory Croskey-Merritt,RB,139.5268,WAS
+1394825,Omar Cooper Jr.,WR,141.1869,FA
+1213257,Bryce Young,QB,142.37827,CAR
+1164940,Brenton Strange,TE,144.29698,JAX
+1289428,Mike Washington Jr.,RB,145.40688,FA
+923412,Rashid Shaheed,WR,145.58348,SEA
+1228691,Cam Ward,QB,146.23341,TEN
+1326601,Jonathon Brooks,RB,146.53975,CAR
+884609,Juwan Johnson,TE,147.35345,NO
+820699,Mark Andrews,TE,147.55927,BAL
+607047,Jacoby Brissett,QB,148.00131,ARI
+867009,Jauan Jennings,WR,150.50972,FA
+1109708,Tyrone Tracy Jr.,RB,152.44612,NYG
+694041,Stefon Diggs,WR,153.81172,FA
+1380594,Jonah Coleman,RB,154.04712,FA
+1231652,Woody Marks,RB,155.09756,HOU
+744425,Hunter Henry,TE,155.16394,NE
+1106374,Chig Okonkwo,TE,155.6458,WAS
+823156,Tyreek Hill,WR,156.96225,FA
+742390,James Conner,RB,157.26115,ARI
+1379904,Denzel Boston,WR,157.54868,FA
+1447759,Emanuel Wilson,RB,159.14162,SEA
+1400786,Fernando Mendoza,QB,159.29317,FA
+1107034,Brandon Aiyuk,WR,159.97223,SF
+1106832,Isiah Pacheco,RB,163.89111,DET
+1399275,Travis Hunter,WR,164.51024,JAX
+1222789,Keaton Mitchell,RB,164.81279,LAC
+973935,Jerry Jeudy,WR,166.10324,CLE
+923915,T.J. Hockenson,TE,166.16792,MIN
+513856,Geno Smith,QB,169.1778,NYJ
+1213362,Kayshon Boutte,WR,170.16476,NE
+1126817,Jalen Nailor,WR,171.74348,LV
+835749,Deebo Samuel Sr.,WR,172.47504,FA
+1229503,AJ Barner,TE,172.71269,SEA
+830523,Dalton Schultz,TE,173.9737,HOU
+1441362,Isaac TeSlaa,WR,175.047,DET
+884013,Calvin Ridley,WR,175.90448,TEN
+1169430,Tyjae Spears,RB,176.53163,TEN
+1379251,Emmett Johnson,RB,177.53278,FA
+1399910,Dylan Sampson,RB,178.57973,CLE
+1128222,Tank Dell,WR,179.57689,HOU
+1286065,Eli Stowers,TE,180.7448,FA
+865801,Christian Kirk,WR,181.32405,SF
+1285908,Adonai Mitchell,WR,182.63896,NYJ
+750846,Alvin Kamara,RB,183.16628,NO
+973966,Brian Robinson Jr.,RB,183.30481,ATL
+1173255,Malik Washington,WR,186.17752,MIA
+1214633,Tre' Harris,WR,186.98001,LAC
+973947,Tua Tagovailoa,QB,187.93927,ATL
+1060312,Colby Parkinson,TE,188.35243,LAR
+1381263,Mason Taylor,TE,189.22119,NYJ
+1215035,Tank Bigsby,RB,190.29535,PHI
+1164979,Tre Tucker,WR,191.67055,LV
+1214824,Kimani Vidal,RB,194.7686,LAC
+1215102,Chimere Dike,WR,195.12611,TEN
+832098,David Njoku,TE,196.15155,FA
+1049263,Cade Otton,TE,196.90608,TB
+912027,Darnell Mooney,WR,197.45886,NYG
+1379264,Nicholas Singleton,RB,198.25356,FA
+1172428,Dontayvion Wicks,WR,199.31145,PHI
+1286438,Gunnar Helm,TE,200.1327,TEN
+1325231,Braelon Allen,RB,200.69548,NYJ
+1272321,Shedeur Sanders,QB,201.33534,CLE
+1286176,Troy Franklin,WR,201.82008,DEN
+1223393,Tory Horton,WR,203.27979,SEA
+1400657,Jordan James,RB,203.39305,SF
+403308,Kirk Cousins,QB,204.84456,LV
+1393832,Ryan Flournoy,WR,204.89659,DAL
+1248031,Trey Benson,RB,206.53725,ARI
+213957,Aaron Rodgers,QB,207.54572,FA
+1165229,Ray Davis,RB,209.08788,BUF
+1400788,Chris Brazzell II,WR,209.59915,FA
+1305866,Pat Bryant,WR,211.12985,DEN
+1286179,Terrance Ferguson,TE,211.18361,LAR
+1107478,Michael Penix Jr.,QB,211.42552,ATL
+698227,Cooper Kupp,WR,213.14626,SEA
+1228633,Sean Tucker,RB,214.16933,TB
+1116662,Pat Freiermuth,TE,214.73315,PIT
+1392584,Elijah Sarratt,WR,216.58037,FA
+1068872,Jake Tonges,TE,217.03056,SF
+1379259,Kaytron Allen,RB,217.86412,FA
+1380613,Germie Bernard,WR,218.68246,FA
+1164788,Devaughn Vele,WR,218.71689,NO
+976220,Hollywood Brown,WR,218.84886,PHI
+1110681,Justin Fields,QB,219.64989,KC
+1378917,Ty Simpson,QB,219.70634,FA
+1180625,George Holani,RB,221.09283,SEA
+1377766,Ollie Gordon II,RB,221.58273,MIA
+1214414,Theo Johnson,TE,221.74837,NYG
+828743,Deshaun Watson,QB,221.99995,CLE
+973964,Najee Harris,RB,223.09743,FA
+702808,Mack Hollins,WR,223.26259,NE
+1287599,J.J. McCarthy,QB,223.3563,MIN
+1395319,Elic Ayomanor,WR,223.55988,TEN
+1128085,Greg Dulcich,TE,224.09889,MIA
+1441110,Zachariah Branch,WR,224.37527,FA
+1124664,Cedric Tillman,WR,224.3981,CLE
+1277914,Devontez Walker,WR,224.4531,BAL
+1290165,Riley Leonard,QB,224.6,IND
+1521285,Ted Hurst,WR,224.6156,FA
+1322431,Keon Coleman,WR,224.68541,BUF
+1066424,Jalen Tolbert,WR,224.6998,MIA
+1286164,Dont'e Thornton Jr.,WR,224.81815,LV
+746613,Kareem Hunt,RB,224.8762,FA
+820727,Joe Mixon,RB,224.97816,FA
+923109,Justice Hill,RB,225.11697,BAL
+1378898,Jaydon Blue,RB,225.40498,DAL
+1394803,Trevor Etienne,RB,225.74197,CAR
+1395874,Eli Heidenreich,WR,225.83049,FA
+836152,Mike Gesicki,TE,226.12355,CIN
+865958,KaVontae Turpin,WR,226.2581,DAL
+1180321,Xavier Legette,WR,226.28723,CAR
+1213782,Will Howard,QB,226.3171,PIT
+1164533,Erick All Jr.,TE,226.6364,CIN
+1164846,Luke McCaffrey,WR,226.73773,WAS
+749185,Evan Engram,TE,226.78961,DEN
+1172024,Treylon Burks,WR,226.81633,WAS
+1317230,Roman Hemby,RB,226.973,FA
+877784,Ty Johnson,RB,227.046,BUF
+1378156,Sam Roush,TE,227.0741,FA
+883976,Olamide Zaccheaus,WR,227.0769,ATL
+1218658,Darnell Washington,TE,227.1026,PIT
+1066765,Cole Kmet,TE,227.16458,CHI
+607843,Marcus Mariota,QB,227.2222,WAS
+1378840,LeQuint Allen Jr.,RB,227.3056,JAX
+557210,Keenan Allen,WR,227.30711,FA
+1214837,Tez Johnson,WR,227.33119,TB
+1213636,Xavier Hutchinson,WR,227.3333,HOU
+1458888,Ja'Kobi Lane,WR,227.43752,FA
+1287798,Deion Burks,WR,227.4783,FA
+1399132,Brenen Thompson,WR,227.4894,FA
+1124851,Andrei Iosivas,WR,227.5833,CIN
+973945,Mac Jones,QB,227.6111,SF
+1110301,Tyquan Thornton,WR,227.6765,KC
+1116817,Emari Demercado,RB,227.69536,KC
+1325016,Bryce Lance,WR,227.80437,FA
+1324856,Eric McAlister,WR,227.80853,FA
+1325234,Skyler Bell,WR,227.8243,FA
+880557,Darius Slayton,WR,227.8365,NYG
+216342,Joe Flacco,QB,227.85,CIN
+1286513,Jaylen Wright,RB,228.0294,MIA
+1215772,Kaelon Black,RB,228.1791,FA
+1378284,Adam Randall,RB,228.2895,FA
+1293066,Devin Neal,RB,228.32758,NO
+1286370,Jaylin Noel,WR,228.375,HOU
+1323708,Michael Trigg,TE,228.4,FA
+1213799,Marvin Mims Jr.,WR,228.5385,DEN
+1381105,Oscar Delp,TE,228.604,FA
+1403969,Eli Raridon,TE,228.6667,FA
+1106760,Tutu Atwell,WR,228.7846,MIA
+820734,Samaje Perine,RB,228.8,CIN
+1389700,Chris Bell,WR,228.893,FA
+754412,Kendrick Bourne,WR,229,ARI
+604176,Tyler Higbee,TE,229.00002,LAR
+1390910,Demond Claiborne,RB,229.0069,FA
+1227157,Kyle Williams,WR,229.0318,NE
+1465213,Jahdae Walker,WR,229.0513,CHI
+1127065,Chris Brooks,RB,229.07898,GB
+1381902,Kaleb Johnson,RB,229.22217,PIT
+1313668,Brashard Smith,RB,229.31451,KC
+1215022,Anthony Richardson Sr.,QB,229.375,IND
+692660,Kalif Raymond,WR,229.4516,CHI
+1213414,MarShawn Lloyd,RB,229.4731,GB
+975028,Malik Davis,RB,229.5254,DAL
+1175693,DeMario Douglas,WR,229.5385,NE
+1121878,Jahan Dotson,WR,229.5393,ATL
+1228730,Tahj Brooks,RB,229.7273,CIN
+1062765,Calvin Austin III,WR,229.8286,NYG
+1326628,Ja'Tavion Sanders,TE,229.9167,CAR
+1126338,Isaac Guerendo,RB,230.0606,SF
+1401683,Max Klare,TE,230.0976,FA
+1378290,Antonio Williams,WR,230.26016,FA
+1398503,Isaiah Bond,WR,230.2941,CLE
+1319589,Malachi Fields,WR,230.34998,FA
+1108208,Rashod Bateman,WR,230.4675,BAL
+1303569,DJ Giddens,RB,230.7436,IND
+1232592,Michael Mayer,TE,230.9189,LV
+1213872,Savion Williams,WR,230.97617,GB
+503177,Zach Ertz,TE,231.3667,FA
+884083,Dawson Knox,TE,231.40703,BUF
+1405928,Justin Joly,TE,231.4167,FA
+1286046,Jack Bech,WR,231.5439,LV
+1286840,Elijah Arroyo,TE,231.5652,SEA
+1286818,De'Zhaun Stribling,WR,231.85002,FA
+600191,Darren Waller,TE,232.2308,FA
+1056981,Noah Gray,TE,232.4,KC
+1213794,Seth McGowan,RB,232.5278,FA
+1216288,Efton Chism III,WR,234.05,NE
+1271609,Isaiah Davis,RB,235.0769,NYJ
 1213867,Kendre Miller,RB,,NO
+1228920,Ben Sinnott,TE,,WAS
 1163866,Zonovan Knight,RB,,ARI
+790004,Austin Ekeler,RB,,FA
 1107826,Antonio Gibson,RB,,FA
 607864,Brandin Cooks,WR,,FA
+1214405,KeAndre Lambert-Smith,WR,,LAC
+1277947,J'Mari Taylor,RB,,FA
 1402713,Le'Veon Moss,RB,,FA
-1378911,Jam Miller,RB,,NE
+1378911,Jam Miller,RB,,FA
 1246039,Terion Stewart,RB,,FA
 1215306,Noah Whittington,RB,,FA
-1381444,Dean Connors,RB,,LAR
+1381444,Dean Connors,RB,,FA
 1399587,Desmond Reid,RB,,FA
-1395681,CJ Donaldson,RB,,NO
+1395681,CJ Donaldson,RB,,FA
+1377757,Jaydn Ott,RB,,FA
 1378905,Aaron Anderson,WR,,FA
 1446502,Eric Rivers,WR,,FA
-1229756,Joe Royer,TE,,CLE
+1229756,Joe Royer,TE,,FA
+1380368,Tanner Koziol,TE,,FA
+1321291,Audric Estime,RB,,NO
 1286048,Chris Hilton Jr.,WR,,FA
-1400852,Jack Endries,TE,,CIN
+1214689,Jaylin Lane,WR,,WAS
+1400852,Jack Endries,TE,,FA
+1403491,Jalen Royals,WR,,KC
+1213340,Carson Beck,QB,,FA
+1286037,Garrett Nussmeier,QB,,FA
 1477140,Trinidad Chambliss,QB,,FA
-1384651,Diego Pavia,QB,,BAL
-1325475,Josh Cameron,WR,,JAX
-1395843,Barion Brown,WR,,NO
+1378287,Cade Klubnik,QB,,FA
+1384651,Diego Pavia,QB,,FA
+1399272,Kevin Coleman Jr.,WR,,FA
+1226616,CJ Daniels,WR,,FA
+1325475,Josh Cameron,WR,,FA
+1395843,Barion Brown,WR,,FA
+1394798,Caleb Douglas,WR,,FA
 1378660,Dane Key,WR,,FA
-1333868,Quinn Ewers,QB,223.5806,MIA
-1461173,Dallen Bentley,TE,,DEN
-1288387,John Michael Gyllenborg,TE,,KC
+1333868,Quinn Ewers,QB,,MIA
+1289332,Konata Mumpfield,WR,,LAR
+1461173,Dallen Bentley,TE,,FA
+1288387,John Michael Gyllenborg,TE,,FA
 865844,Jake Browning,QB,,TB
-1163273,Jordan Whittington,WR,226.3469,LAR
+1163273,Jordan Whittington,WR,,LAR
 1164137,Jawhar Jordan,RB,,HOU
 1060550,Hunter Long,TE,,JAX
 1322393,Jimmy Horn Jr.,WR,,CAR
@@ -397,17 +375,21 @@ ID,Name,Position,ADP,Team,,Instructions
 1113381,Brenden Bates,TE,,CLE
 1121075,Jordan Travis,QB,,FA
 865868,Jarrett Stidham,QB,,DEN
+916466,Devin Singletary,RB,,NYG
 1174752,Spencer Rattler,QB,,NO
 822857,Nick Chubb,RB,,FA
 743749,Jonnu Smith,TE,,FA
+1160348,John Metchie III,WR,,CAR
+560241,DeAndre Hopkins,WR,,FA
 1122035,Daniel Bellinger,TE,,TEN
 739424,Austin Hooper,TE,,ATL
 1161853,Elijah Higgins,TE,,ARI
+727279,Demarcus Robinson,WR,,SF
 401534,Russell Wilson,QB,,FA
+1179790,Luke Musgrave,TE,,GB
 1289471,Mitchell Evans,TE,,CAR
 1271738,Jaleel McLaughlin,RB,,DEN
 976221,Grant Calcaterra,TE,,PHI
-1216288,Efton Chism III,WR,,NE
 1176730,Skyy Moore,WR,,GB
 694931,Eric Saubert,TE,,SEA
 1107536,Devin Culp,TE,,TB
@@ -435,6 +417,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1161664,Davis Allen,TE,,LAR
 881779,Josh Oliver,TE,,MIN
 838179,Tim Patrick,WR,,FA
+691536,Jameis Winston,QB,,NYG
 503184,Taysom Hill,TE,,FA
 1067309,Zavier Scott,RB,,MIN
 1229669,Roman Wilson,WR,,PIT
@@ -450,6 +433,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1285895,Raheim Sanders,RB,,CLE
 1166036,Ashton Dulin,WR,,IND
 1175182,Cade Stover,TE,,HOU
+1287636,Will Shipley,RB,,PHI
 1223318,Darius Cooper,WR,,PHI
 1130975,Trey Lance,QB,,LAC
 1123521,Tanner McKee,QB,,PHI
@@ -457,9 +441,11 @@ ID,Name,Position,ADP,Team,,Instructions
 1232892,Jalin Hyatt,WR,,NYG
 1214183,Xavier Restrepo,WR,,TEN
 694117,Cooper Rush,QB,,FA
+1287587,Tai Felton,WR,,MIN
 1214132,Nathan Carter,RB,,ATL
 1222835,Jordan Watkins,WR,,SF
 1121050,Jake Bobo,WR,,SEA
+1444140,Tyson Bagent,QB,,CHI
 1130260,Payne Durham,TE,,TB
 1108052,Zach Wilson,QB,,NO
 1128075,Kazmeir Allen,RB,,FA
@@ -467,18 +453,20 @@ ID,Name,Position,ADP,Team,,Instructions
 748309,Nick Mullens,QB,,JAX
 555358,Jimmy Garoppolo,QB,,FA
 496083,Derek Carr,QB,,FA
+1125737,Jerome Ford,RB,,WAS
 910852,Greg Dortch,WR,,DET
-1059612,Joshua Palmer,WR,225.89114,BUF
+1059612,Joshua Palmer,WR,,BUF
 1181861,Jacob Cowing,WR,,SF
-1323916,J. Michael Sturdivant,WR,,GB
+1323916,J.Michael Sturdivant,WR,,FA
 976329,Michael Carter,RB,,TEN
 837594,Jeremy McNichols,RB,,WAS
 1165333,Dillon Gabriel,QB,,CLE
 605242,Tyler Lockett,WR,,FA
-399579,Tyrod Taylor,QB,,GB
+399579,Tyrod Taylor,QB,,FA
 1176432,Isaiah Williams,WR,,NYJ
 501150,Kyle Juszczyk,RB,,SF
 1182649,Jackson Hawes,TE,,BUF
+1107878,Dyami Brown,WR,,WAS
 866973,David Sills V,WR,,TB
 1137635,Xavier Smith,WR,,LAR
 1115394,Tanner Hudson,TE,,CIN
@@ -488,14 +476,15 @@ ID,Name,Position,ADP,Team,,Instructions
 733643,Adam Thielen,WR,,FA
 606551,Chris Moore,WR,,FA
 1168410,Gunner Olszewski,WR,,NYG
-911236,Tyler Johnson,WR,,DAL
+911236,Tyler Johnson,WR,,FA
 1130976,Hunter Luepke,RB,,DAL
 590796,Ameer Abdullah,RB,,FA
 1213386,Brady Cook,QB,,NYJ
+1058648,Charlie Kolar,TE,,LAC
 841649,Hunter Renfrow,WR,,FA
 246054,Philip Rivers,QB,,FA
 1130526,Kevin Austin Jr.,WR,,NO
-742382,Marquez Valdes-Scantling,WR,,DAL
+742382,Marquez Valdes-Scantling,WR,,FA
 837824,Drew Sample,TE,,CIN
 1215291,Malachi Corley,WR,,CLE
 1123630,Julian Hill,TE,,NE
@@ -517,6 +506,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1178628,Jamari Thrash,WR,,CLE
 837820,Dante Pettis,WR,,FA
 740704,Johnny Mundt,TE,,PHI
+883259,Nick Westbrook-Ikhine,WR,,IND
 946261,Tanner Conner,TE,,NYG
 823220,Mason Rudolph,QB,,PIT
 1412326,Kameron Johnson,WR,,TB
@@ -526,7 +516,7 @@ ID,Name,Position,ADP,Team,,Instructions
 920944,Ben Skowronek,WR,,PIT
 1132517,Nate Adkins,TE,,DEN
 1114364,Shedrick Jackson,WR,,LV
-885540,Adam Prentice,RB,,DEN
+885540,Adam Prentice,RB,,FA
 915397,C.J. Ham,RB,,FA
 1176431,Casey Washington,WR,,ATL
 866578,Scotty Miller,WR,,FA
@@ -574,7 +564,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1215308,Mason Kinsey,WR,,TEN
 1384869,Dareke Young,WR,,LV
 749968,Durham Smythe,TE,,BAL
-1173266,Evan Hull,RB,,FA
+1173266,Evan Hull,RB,,NO
 1130833,Deven Thompkins,WR,,ATL
 1067132,Charlie Jones,WR,,CIN
 1129452,Ben Sims,TE,,MIA
@@ -585,6 +575,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1284247,Shane Zylstra,TE,,FA
 915066,Reggie Gilliam,RB,,NE
 1066811,Aidan O'Connell,QB,,LV
+1122182,Dylan Laube,RB,,LV
 920756,Devin Duvernay,WR,,ARI
 976804,Ronnie Rivers,RB,,LAR
 1065052,Tay Martin,WR,,FA
@@ -606,7 +597,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1286173,Moliki Matavao,TE,,NO
 1109133,Clayton Tune,QB,,FA
 592195,Teddy Bridgewater,QB,,DET
-916467,Harrison Bryant,TE,,SEA
+916467,Harrison Bryant,TE,,FA
 1251513,Cam Grandy,TE,,CIN
 1049915,David Moore,WR,,CAR
 1113477,Derius Davis,WR,,LAC
@@ -624,7 +615,7 @@ ID,Name,Position,ADP,Team,,Instructions
 975503,Jelani Woods,TE,,NYJ
 1468632,Carter Runyon,TE,,LV
 1228551,Drake Dabney,TE,,GB
-920560,Samori Toure,WR,,FA
+920560,Samori Toure,WR,,NO
 660151,Robert Tonyan,TE,,FA
 1131457,Jacob Saylors,RB,,DET
 1172990,Josh Williams,RB,,TB
@@ -635,6 +626,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1049797,Owen Wright,RB,,TB
 865895,Myles Gaskin,RB,,FA
 910377,Feleipe Franks,TE,,CAR
+1381164,Sione Vaki,RB,,DET
 1167356,Craig Reynolds,RB,,FA
 1062314,Malik Cunningham,WR,,DET
 472623,James Winchester,TE,,KC
@@ -659,7 +651,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1180329,Dalen Cambre,WR,,NYG
 1125589,Brayden Willis,TE,,SF
 1231079,Jason Brownlee,WR,,KC
-214197,Marcedes Lewis,TE,,FA
+214197,Marcedes Lewis,TE,,DEN
 1506510,Louis Rees-Zammit,WR,,FA
 976236,Trey Sermon,RB,,FA
 1161798,Eric Gray,RB,,NYG
@@ -694,7 +686,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1140248,Cody Schrader,RB,,DEN
 1128981,Jashaun Corbin,RB,,FA
 1173485,Ulysses Bentley IV,RB,,IND
-1050833,Elijah Mitchell,RB,,FA
+1050833,Elijah Mitchell,RB,,NE
 1315586,Tejhaun Palmer,WR,,ARI
 1286662,Jordan Moore,WR,,CIN
 1106382,Jeshaun Jones,WR,,MIN
@@ -839,7 +831,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1223022,Hunter Dekkers,QB,,FA
 1214266,Maximilian Mang,TE,,FA
 949134,Quez Watkins,WR,,PHI
-1446717,Patrick Murtagh,TE,,FA
+1446717,Patrick Murtagh,TE,,DEN
 1162109,Luke Deal,TE,,FA
 910805,Marcus Simms,WR,,FA
 1122587,Jaelen Gill,WR,,FA
@@ -891,6 +883,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1162606,Austin Stogner,TE,,FA
 851225,Sammis Reyes,TE,,FA
 1131681,Zach Heins,TE,,FA
+1222131,Kyren Lacy,WR,,FA
 1164535,Tre Mosley,WR,,FA
 1172107,Ali Jennings,WR,,FA
 1161856,Austin Jones,RB,,FA
@@ -964,7 +957,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1172039,Dominick Blaylock,WR,,FA
 1231663,Dillon Johnson,RB,,FA
 911710,Austin Mack,WR,,FA
-1214733,Corey Rucker,WR,,LV
+1214733,Corey Rucker,WR,,FA
 1161687,Frank Ladson Jr.,WR,,FA
 1131687,Jaxon Janke,WR,,FA
 1173128,Jalon Calhoun,WR,,FA
@@ -977,7 +970,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1068724,Raheem Blackshear,RB,,FA
 733754,Mike Williams,WR,,FA
 886641,JaMycal Hasty,RB,,FA
-1229765,Jaheim Bell,TE,,PIT
+1229765,Jaheim Bell,TE,,PHI
 838396,Jordan Akins,TE,,FA
 1059221,Ihmir Smith-Marsette,WR,,ARI
 650914,Amari Cooper,WR,,FA
@@ -995,16 +988,17 @@ ID,Name,Position,ADP,Team,,Instructions
 884943,Trenton Irwin,WR,,FA
 1049254,Jake Haener,QB,,FA
 1228925,Deuce Vaughn,RB,,DEN
+589984,Odell Beckham Jr.,WR,,FA
 822008,DJ Chark,WR,,FA
 1109285,Terrace Marshall Jr.,WR,,MIA
-1059684,Desmond Ridder,QB,,FA
+1059684,Desmond Ridder,QB,,GB
 1172173,Keilan Robinson,RB,,FA
 976066,Jalen Reagor,WR,,FA
 1128116,Dorian Thompson-Robinson,QB,,FA
 554431,Eric Tomlinson,TE,,FA
 842181,Mike Boone,RB,,FA
 1161816,Ramel Keyton,WR,,FA
-1166235,Sincere McCormick,RB,,SF
+1166235,Sincere McCormick,RB,,FA
 912596,Jalen Virgil,WR,,BUF
 1054203,John Samuel Shenker,TE,,FA
 912553,Jonathan Ward,RB,,FA
@@ -1014,7 +1008,7 @@ ID,Name,Position,ADP,Team,,Instructions
 976966,Hendon Hooker,QB,,TEN
 933537,J.J. Taylor,RB,,FA
 599113,Taylor Heinicke,QB,,FA
-1108990,Blake Watson,RB,,FA
+1108990,Blake Watson,RB,,TEN
 557860,Sean Mannion,QB,,FA
 605335,DeAndre Washington,RB,,FA
 1060671,Tommy DeVito,QB,,NE
@@ -1025,16 +1019,16 @@ ID,Name,Position,ADP,Team,,Instructions
 1106846,Michael Woods II,WR,,FA
 1121220,Dante Miller,RB,,NYG
 1168245,Sam Howell,QB,,DAL
-921460,Brandon Johnson,WR,,PIT
+921460,Brandon Johnson,WR,,DEN
 1051044,Aaron Shampklin,RB,,FA
 1060650,Montrell Washington,WR,,FA
 555648,Jordan Matthews,TE,,FA
 1058090,Bailey Zappe,QB,,NYJ
-976809,Elijah Cooks,WR,,FA
+976809,Elijah Cooks,WR,,NO
 1134438,Tanner McLachlan,TE,,LAC
 741447,Tim Boyle,QB,,FA
 921454,Marquez Callaway,WR,,FA
-1107595,Zack Kuntz,TE,,FA
+1107595,Zack Kuntz,TE,,MIA
 1131023,Jaylen Johnson,WR,,FA
 867754,Deon Cain,WR,,FA
 976528,KJ Hamler,WR,,FA
@@ -1048,7 +1042,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1523471,Tre Stewart,RB,,FA
 1270617,JJ Galbreath,TE,,PIT
 1405106,Andrew Armstrong,WR,,KC
-1316545,ShunDerrick Powell,RB,,FA
+1316545,ShunDerrick Powell,RB,,KC
 1125632,Carter Bradley,QB,,JAX
 1169263,Chandler Brayboy,WR,,JAX
 1510975,Cole Burgess,WR,,PIT
@@ -1061,19 +1055,19 @@ ID,Name,Position,ADP,Team,,Instructions
 1181659,Cornelius Johnson,WR,,BAL
 1214289,Ahmani Marshall,RB,,CLE
 1325513,Hal Presley III,WR,,TEN
-1218906,Marshall Lang,TE,,FA
+1218906,Marshall Lang,TE,,NE
 1313642,Montrell Johnson Jr.,RB,,CAR
 1287778,Anthony Tyus III,RB,,CAR
 1060890,Tanner Taula,TE,,FA
 1067089,Sean Clifford,QB,,CIN
 1213897,Garrett Greene,WR,,TB
-1478205,John Jiles,WR,,FA
+1478205,John Jiles,WR,,NE
 1215927,Luke Lachey,TE,,HOU
 1326964,Junior Bergen,WR,,SF
 1287826,Kyle McCord,QB,,GB
 746244,Keith Kirkwood,WR,,FA
 1170921,Josh Kelly,WR,,HOU
-820423,Will Grier,QB,,CAR
+820423,Will Grier,QB,,FA
 1315563,Bryson Nesbit,TE,,MIN
 1222139,Dontae Fleming,WR,,MIN
 836347,John Wolford,QB,,FA
@@ -1101,7 +1095,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1181894,Tyrone Broden,WR,,SEA
 914812,Demetric Felton,RB,,FA
 1271703,Jamoi Mayes,WR,,FA
-1173174,Jordan Waters,RB,,LAR
+1173174,Jordan Waters,RB,,FA
 1215427,Tommy Mellott,WR,,FA
 1229370,Rashod Owens,WR,,FA
 1122502,Devin Leary,QB,,FA
@@ -1149,12 +1143,12 @@ ID,Name,Position,ADP,Team,,Instructions
 924362,Quintez Cephus,WR,,FA
 1277932,Joaquin Davis,WR,,MIN
 1223744,Rivaldo Fairweather,TE,,ARI
-1215379,Xavier Guillory,WR,,BAL
+1215379,Xavier Guillory,WR,,FA
 824177,Matt Sokol,TE,,FA
 1168753,Patrick Herbert,TE,,JAX
 1215329,Will Sheppard,WR,,GB
-1180557,Kyrese Rowan,WR,,FA
-1176792,John Rhys Plumlee,WR,,FA
+1180557,Kyrese Rowan,WR,,DEN
+1176792,John Rhys Plumlee,WR,,PIT
 1286441,Mario Williams,WR,,LAR
 1215078,Stephen Gosnell,WR,,BUF
 1231431,Caleb Lohner,TE,,DEN
@@ -1186,7 +1180,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1181288,Payton Thorne,QB,,FA
 1285893,Ketron Jackson Jr.,WR,,FA
 1233292,Nate Noel,RB,,FA
-879277,Ben DiNucci,QB,,FA
+879277,Ben DiNucci,QB,,DEN
 1179244,Michael Wiley,RB,,TB
 1163445,Eli Pancol,WR,,IND
 1124355,Messiah Swinson,TE,,GB
@@ -1195,8 +1189,8 @@ ID,Name,Position,ADP,Team,,Instructions
 1218880,Luke Floriea,WR,,CLE
 835779,Royce Freeman,RB,,FA
 1107326,Thomas Yassmin,TE,,LAC
-1127066,McCallan Castles,TE,,FA
-1109758,A.T. Perry,WR,,PIT
+1127066,McCallan Castles,TE,,GB
+1109758,A.T. Perry,WR,,DEN
 338280,Case Keenum,QB,,CHI
 910808,Stephen Sullivan,TE,,FA
 747906,John Ross III,WR,,FA
@@ -1285,6 +1279,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1049246,Salvon Ahmed,RB,,FA
 1161661,Anthony Gould,WR,,IND
 1063397,D.J. Montgomery,WR,,FA
+1130270,Rondale Moore,WR,,FA
 822367,Josh Reynolds,WR,,FA
 911985,Jack Stoll,TE,,CLE
 1182695,Mason Tipton,WR,,NO
@@ -1308,17 +1303,19 @@ ID,Name,Position,ADP,Team,,Instructions
 1057484,Cody White,WR,,SEA
 1172050,Kenny McIntosh,RB,,SEA
 1127080,Nikko Remigio,WR,,KC
+867303,Gardner Minshew II,QB,,ARI
 1287639,Jake Briningstool,TE,,KC
 1125882,Keaontay Ingram,RB,,FA
 1213486,Johnny Wilson,WR,,PHI
 1131017,John FitzPatrick,TE,,FA
 978120,Brock Wright,TE,,DET
 1163265,Roschon Johnson,RB,,CHI
-556483,Michael Burton,RB,,CLE
+556483,Michael Burton,RB,,FA
 1122323,Lucas Krull,TE,,DEN
 1118734,David Durden,WR,,FA
 1125607,Tanner Mordecai,QB,,FA
 1214876,Troy Omeire,WR,,FA
+1214220,Cole Burgess,WR,,FA
 1313855,Roderick Daniels Jr.,WR,,FA
 1180433,TJ Sheffield,WR,,FA
 1178635,Kay'Ron Lynch-Adams,RB,,FA
@@ -1346,7 +1343,7 @@ ID,Name,Position,ADP,Team,,Instructions
 1317287,Brock Lampe,RB,,NE
 1182082,Terrell Jennings,RB,,NE
 943635,Patrick Taylor Jr.,RB,,SF
-1130245,Ben VanSumeren,RB,,BUF
+1130245,Ben VanSumeren,RB,,FA
 1319246,Kye Robichaux,RB,,DET
 1181892,Deion Hankins,RB,,CHI
 1173254,Thomas Gordon,TE,,DET
@@ -1357,24 +1354,26 @@ ID,Name,Position,ADP,Team,,Instructions
 1180347,David Bell,WR,,FA
 1287258,Gavin Bartholomew,TE,,MIN
 883312,Irvin Charles,WR,,NYJ
+1379258,Drew Allar,QB,,FA
+1288113,Taylen Green,QB,,FA
 1321073,Sawyer Robertson,QB,,FA
-1324976,Cole Payton,QB,,PHI
+1324976,Cole Payton,QB,,FA
 1286262,Miller Moss,QB,,FA
-1448305,Joey Aguilar,QB,,JAX
+1448305,Joey Aguilar,QB,,FA
 1225681,Jalon Daniels,QB,,FA
-1286388,Behren Morton,QB,,NE
-1169299,Joe Fagnano,QB,,BAL
+1286388,Behren Morton,QB,,FA
+1169299,Joe Fagnano,QB,,FA
 1286214,Luke Altmyer,QB,,FA
 1214336,Haynes King,QB,,FA
-1287925,Athan Kaliakmanis,QB,,WAS
+1287925,Athan Kaliakmanis,QB,,FA
 1228539,Blake Shapen,QB,,FA
 1178322,Maverick McIvor,QB,,FA
 1379409,Tommy Castellanos,QB,,FA
-1164691,Jacob Clark,QB,,LV
+1164691,Jacob Clark,QB,,FA
 1442407,Jake Retzlaff,QB,,FA
 1286509,Kaidon Salter,QB,,FA
 1271545,Mark Gronowski,QB,,FA
-1286337,Kyron Drones,QB,,GB
+1286337,Kyron Drones,QB,,FA
 1460634,Rahsul Faison,RB,,FA
 1394697,Anthony Hankerson,RB,,FA
 1396978,Star Thomas,RB,,FA
@@ -1382,74 +1381,76 @@ ID,Name,Position,ADP,Team,,Instructions
 1229055,Kentrel Bullock,RB,,FA
 1443998,Robert Henry Jr.,RB,,FA
 1445256,Davon Booth,RB,,FA
-1223748,Kejon Owens,RB,,MIN
+1223748,Kejon Owens,RB,,FA
 1329289,Cash Jones,RB,,FA
 1270601,Shomari Lawrence,RB,,FA
 1305864,Josh McCray,RB,,FA
-1325618,Jaden Nixon,RB,,GB
+1325618,Jaden Nixon,RB,,FA
 1287829,Evan Pryor,RB,,FA
 1324988,Barika Kpeenu,RB,,FA
 1400074,Tawee Walker,RB,,FA
-1325800,Chase Roberts,WR,,LV
-1406878,Colbie Young,WR,,CIN
-1287810,Harrison Wallace III,WR,,ARI
-1390939,Reggie Virgil,WR,,ARI
+1325800,Chase Roberts,WR,,FA
+1406878,Colbie Young,WR,,FA
+1287810,Harrison Wallace III,WR,,FA
+1390939,Reggie Virgil,WR,,FA
 1323864,O'Mega Blake,WR,,FA
 1214123,Keelan Marion,WR,,FA
 1321078,Jalen Walthall,WR,,FA
-1286652,Lewis Bond,WR,,HOU
+1382670,Cyrus Allen,WR,,FA
+1286652,Lewis Bond,WR,,FA
 1381305,Nic Anderson,WR,,FA
-1339352,Jeff Caldwell,WR,,KC
+1339352,Jeff Caldwell,WR,,FA
 1313657,Romello Brinson,WR,,FA
 1402692,Noah Thomas,WR,,FA
-1398511,Emmanuel Henderson Jr.,WR,,SEA
+1398511,Emmanuel Henderson Jr.,WR,,FA
 1401629,Vinny Anthony II,WR,,FA
-1379331,Jordan Hudson,WR,,DAL
-1222614,Anthony Smith,WR,,DAL
+1379331,Jordan Hudson,WR,,FA
+1441191,Malik Benson,WR,,FA
+1222614,Anthony Smith,WR,,FA
 1397608,Noah Short,WR,,FA
-1452585,Michael Wortham,WR,,JAX
+1452585,Michael Wortham,WR,,FA
 1214732,Lincoln Pare,WR,,FA
-1228631,Trebor Pena,WR,,JAX
+1228631,Trebor Pena,WR,,FA
 1290542,Donaven McCulley,WR,,FA
-1396942,Dillon Bell,WR,,MIN
+1396942,Dillon Bell,WR,,FA
 1226344,Nick DeGennaro,WR,,FA
-1390913,Wesley Grimes,WR,,SF
+1390913,Wesley Grimes,WR,,FA
 1321079,RaRa Thomas,WR,,FA
 1320390,Jalil Farooq,WR,,FA
-1378910,Kendrick Law,WR,,DET
-1400513,Hank Beatty,WR,,TEN
+1378910,Kendrick Law,WR,,FA
+1400513,Hank Beatty,WR,,FA
 1234088,Caullin Lacy,WR,,FA
-1445267,Jacob De Jesus,WR,,KC
+1445267,Jacob De Jesus,WR,,FA
 1172922,Ryan Davis,WR,,FA
 1316481,Gabriel Benyard,WR,,FA
 1398544,Kobe Prentice,WR,,FA
 1324913,Max Tomczak,WR,,FA
 1400070,Junior Vandeross III,WR,,FA
 1445120,DT Sheffield,WR,,FA
-1288045,Will Pauling,WR,,SF
-1380572,Dae'Quan Wright,TE,,PHI
-1244224,Riley Nowakowski,TE,,PIT
-1319948,Josh Cuevas,TE,,BAL
-1229542,Dan Villari,TE,,LAR
-1214003,Nate Boerkircher,TE,,JAX
-1290014,Seydou Traore,TE,,MIA
-1322367,Will Kacmarek,TE,,MIA
+1288045,Will Pauling,WR,,FA
+1380572,Dae'Quan Wright,TE,,FA
+1244224,Riley Nowakowski,TE,,FA
+1319948,Josh Cuevas,TE,,FA
+1229542,Dan Villari,TE,,FA
+1214003,Nate Boerkircher,TE,,FA
+1290014,Seydou Traore,TE,,FA
+1322367,Will Kacmarek,TE,,FA
 1405857,Marlin Klein,TE,,FA
-1286401,DJ Rogers,TE,,DAL
-1407374,Lance Mason,TE,,SEA
-1286282,Lake McRee,TE,,PIT
-1326555,Bauer Sharp,TE,,TB
-1381307,Jaren Kanak,TE,,TEN
+1286401,DJ Rogers,TE,,FA
+1407374,Lance Mason,TE,,FA
+1286282,Lake McRee,TE,,FA
+1326555,Bauer Sharp,TE,,FA
+1381307,Jaren Kanak,TE,,FA
 1395857,Josh Kattus,TE,,FA
-1288071,Chamon Metayer,TE,,PIT
-1229693,Matt Hibner,TE,,BAL
-1310628,Khalil Dinkins,TE,,SF
+1288071,Chamon Metayer,TE,,FA
+1229693,Matthew Hibner,TE,,FA
+1310628,Khalil Dinkins,TE,,FA
 1399934,Miles Kitselman,TE,,FA
-1400558,RJ Maryland,TE,,GB
+1400558,RJ Maryland,TE,,FA
 1325589,Drew Biber,TE,,FA
 1378036,Jeremiah Franklin,TE,,FA
 1403373,Jack Velling,TE,,FA
-1393863,Cody Hardy,TE,,NO
+1393863,Cody Hardy,TE,,FA
 1166989,Kurtis Rourke,QB,,SF
 1166944,Malik Taylor,WR,,FA
 943189,Trishton Jackson,WR,,FA
@@ -1463,107 +1464,10 @@ ID,Name,Position,ADP,Team,,Instructions
 1323751,Grant DuBose,WR,,FA
 1181832,Jaden Smith,WR,,FA
 1289220,Zaire Mitchell-Paden,TE,,NO
-913829,Skylar Thompson,QB,,BAL
+913829,Skylar Thompson,QB,,FA
 944343,Alexander Mattison,RB,,FA
 915030,Darrynton Evans,RB,,FA
 1069783,Matt Landers,WR,,FA
 1286521,Kaden Prather,WR,,FA
 1224653,Jalen White,RB,,FA
 1125599,Drake Stoops,WR,,FA
-1228634,Damien Alford,WR,,NO
-1212622,Carson Towt,TE,,IND
-1133320,Dohnte Meyers,WR,,CIN
-883082,Karan Higdon Jr.,RB,,HOU
-607678,Maurice Harris,WR,,NO
-876831,Justin Johnson,TE,,ARI
-695781,Amba Etta-Tawo,WR,,NYG
-1066286,B.J. Baylor,RB,,ATL
-865945,TreVontae Hights,WR,,CAR
-830938,Cole Herdman,TE,,TEN
-749874,Michael Roberts,TE,,MIA
-867993,C.J. Conrad,TE,,NYG
-945086,Drew Anderson,QB,,ARI
-910399,Shea Patterson,QB,,KC
-887450,De'Lance Turner,RB,,MIA
-464295,MarQueis Gray,TE,,SF
-553238,Marcus Murphy,RB,,CAR
-838670,Alex Wesley,WR,,CHI
-406457,Patrick DiMarco,RB,,BUF
-1116182,Paul Butler,TE,,NE
-653107,Chad Kelly,QB,,IND
-867381,Caleb Repp,TE,,ATL
-879279,Darrin Hall,RB,,PIT
-836224,Steve Ishmael,WR,,IND
-933532,Shawn Poindexter,WR,,SF
-867134,Riley Neal,QB,,DEN
-560223,Paul Richardson Jr.,WR,,SEA
-917775,Earnest Edwards,WR,,LAR
-746177,Matt Flanagan,TE,,JAX
-907478,Jordan Jones,RB,,GB
-1179618,Jaaron Hayek,WR,,KC
-874548,Jermiah Braswell,WR,,ARI
-616337,Alex Tanney,QB,,NYG
-749099,Johnny Holton,WR,,NYG
-924196,Sean Riley,WR,,NE
-828750,Adam Choice,RB,,SEA
-558661,Geremy Davis,WR,,DET
-893616,Marvelle Ross,WR,,JAX
-828766,Artavis Scott,WR,,HOU
-924490,Parker Houston,TE,,ARI
-877949,Jared Rice,TE,,LAC
-693356,Paxton Lynch,QB,,PIT
-746533,Spencer Schnell,WR,,TB
-1056855,Sirgeo Hoffman,RB,,ARI
-839204,Napoleon Maxwell,RB,,CHI
-756569,Jason Vander Laan,TE,,NO
-878690,Devin Phelps,WR,,ARI
-494969,Vance McDonald,TE,,PIT
-876862,Nick Tiano,QB,,HOU
-914919,Moritz Bohringer,TE,,CIN
-886225,Dax Raymond,TE,,PIT
-867043,George Campbell,WR,,NYJ
-607847,De'Anthony Thomas,WR,,BAL
-540619,Quincy Enunwa,WR,,NYJ
-836057,Jon Hilliman,RB,,NYG
-747276,Bryant Mitchell,WR,,TB
-611616,Josh Woodrum,QB,,WAS
-884619,Brandon Polk,WR,,LAR
-696122,Jehu Chesson,WR,,NYJ
-838249,Charles Scarff,TE,,BAL
-693980,Ricardo Louis,WR,,MIA
-593517,Jeff Heuerman,TE,,DEN
-884246,Felton Davis,WR,,KC
-607821,Tra Carson,RB,,DET
-739691,Shelton Gibson,WR,,CAR
-749064,Dalyn Dawkins,RB,,DET
-496208,Tommy Bohanon,RB,,BAL
-1138163,Zimari Manning,WR,,DEN
-1115441,Christian Scotland-Williamson,TE,,PIT
-821868,Marcus Green,WR,,PHI
-836211,Jamal Custis,WR,,PIT
-910570,Dillon Mitchell,WR,,MIN
-679453,Ben Braunecker,TE,,CHI
-879280,Quadree Henderson,WR,,PIT
-880043,Aca'Cedric Ware,RB,,TB
-606045,Josh Ferguson,RB,,WAS
-1050875,Billy Brown,TE,,IND
-550290,Erik Swoope,TE,,SF
-609050,Cody Latimer,TE,,WAS
-553696,Josh Bellamy,WR,,NYJ
-650978,Jeremy Hill,RB,,LV
-910461,Kyle Williams,WR,,TEN
-1325562,Max Bredeson,RB,,MIN
-1381092,CJ Williams,WR,,JAX
-1384626,Carsen Ryan,TE,,CLE
-1313532,Devonte Ross,WR,,LAC
-1286393,Jerand Bradley,TE,,LAC
-1379995,Evan Svoboda,TE,,LAC
-1235902,Sincere Brown,WR,,LAC
-1286701,Greg Desrosiers Jr.,RB,,LAC
-1403726,Marcus Sanders Jr.,WR,,MIN
-1396033,Shaleak Knotts,WR,,MIN
-1322478,Luke Wysong,WR,,MIN
-1287685,Alex Bullock,WR,,JAX
-1287915,Brady Boyd,WR,,JAX
-1445115,Ethan Conner,TE,,JAX
-1648361,Ben Patterson,WR,,JAX

@@ -111,8 +111,8 @@
         .rec-bubble h3 { font-size: 0.95rem; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #2a3a4a; }
         .rec-bubble.dk-bubble h3 { color: #00c46a; }
         .rec-bubble.ud-bubble h3 { color: #ffd700; }
-        .rec-bubble.rising-bubble h3 { color: #e74c3c; }
-        .rec-bubble.falling-bubble h3 { color: #2ecc71; }
+        .rec-bubble.rising-bubble h3 { color: #2ecc71; }
+        .rec-bubble.falling-bubble h3 { color: #e74c3c; }
         .rec-list { list-style: none; padding: 0; margin: 0; }
         .rec-list li {
             display: flex; justify-content: space-between; align-items: center;
@@ -126,8 +126,8 @@
         .rec-val { font-weight: 700; font-variant-numeric: tabular-nums; min-width: 55px; text-align: right; }
         .rec-val.ud { color: #ffd700; }
         .rec-val.dk { color: #00c46a; }
-        .rec-val.rising { color: #e74c3c; }
-        .rec-val.falling { color: #2ecc71; }
+        .rec-val.rising { color: #2ecc71; }
+        .rec-val.falling { color: #e74c3c; }
         .rec-adps { color: #666; font-size: 0.78rem; min-width: 90px; text-align: right; }
 
         /* History tab */
@@ -248,6 +248,13 @@
 
     <!-- TAB 2: HISTORY & MOVERS -->
     <div class="tab-panel" id="tab-history">
+        <div style="display:flex;justify-content:center;margin-bottom:20px;">
+            <div class="pos-filters">
+                <button class="pos-btn era-btn" data-era="pre">Pre-draft</button>
+                <button class="pos-btn era-btn" data-era="post">Post-draft</button>
+                <button class="pos-btn era-btn active" data-era="all">Combined</button>
+            </div>
+        </div>
         <h2 class="section-title">Largest ADP Movers</h2>
         <p class="section-sub" id="movers-subtitle">loading...</p>
         <div style="display:flex;justify-content:center;margin-bottom:16px;">
@@ -492,10 +499,35 @@
 
         // ── TAB 2: HISTORY & MOVERS ───────────────────────────────────
         const SNAPSHOTS = [
-            { label: 'Mar 17', dk: 'dk_adp_2026-03-17.csv', ud: 'ud_adp_2026-03-17.csv' },
-            { label: 'Mar 23', dk: 'dk_adp_2026-03-23.csv', ud: 'ud_adp_2026-03-23.csv' },
-            { label: 'Apr 6',  dk: 'dk_adp_2026-04-06.csv', ud: 'ud_adp_2026-04-06.csv' },
-            { label: 'Apr 7',  dk: 'dk_adp_2026-04-07.csv', ud: 'ud_adp_2026-04-07.csv' },
+            { label: 'Mar 17', date: '2026-03-17', era: 'pre',  dk: 'dk_adp_2026-03-17.csv', ud: 'ud_adp_2026-03-17.csv' },
+            { label: 'Mar 23', date: '2026-03-23', era: 'pre',  dk: 'dk_adp_2026-03-23.csv', ud: 'ud_adp_2026-03-23.csv' },
+            { label: 'Apr 6',  date: '2026-04-06', era: 'pre',  dk: 'dk_adp_2026-04-06.csv', ud: 'ud_adp_2026-04-06.csv' },
+            { label: 'Apr 7',  date: '2026-04-07', era: 'pre',  dk: 'dk_adp_2026-04-07.csv', ud: 'ud_adp_2026-04-07.csv' },
+            { label: 'Apr 8',  date: '2026-04-08', era: 'pre',  dk: 'dk_adp_2026-04-08.csv', ud: 'ud_adp_2026-04-08.csv' },
+            { label: 'Apr 9',  date: '2026-04-09', era: 'pre',  dk: 'dk_adp_2026-04-09.csv', ud: 'ud_adp_2026-04-09.csv' },
+            { label: 'Apr 10', date: '2026-04-10', era: 'pre',  dk: 'dk_adp_2026-04-10.csv', ud: 'ud_adp_2026-04-10.csv' },
+            { label: 'Apr 11', date: '2026-04-11', era: 'pre',  dk: 'dk_adp_2026-04-11.csv', ud: 'ud_adp_2026-04-11.csv' },
+            { label: 'Apr 12', date: '2026-04-12', era: 'pre',  dk: 'dk_adp_2026-04-12.csv', ud: 'ud_adp_2026-04-12.csv' },
+            { label: 'Apr 13', date: '2026-04-13', era: 'pre',  dk: 'dk_adp_2026-04-13.csv', ud: 'ud_adp_2026-04-13.csv' },
+            { label: 'Apr 14', date: '2026-04-14', era: 'pre',  dk: 'dk_adp_2026-04-14.csv', ud: 'ud_adp_2026-04-14.csv' },
+            { label: 'Apr 15', date: '2026-04-15', era: 'pre',  dk: 'dk_adp_2026-04-15.csv', ud: 'ud_adp_2026-04-15.csv' },
+            { label: 'Apr 16', date: '2026-04-16', era: 'pre',  dk: 'dk_adp_2026-04-16.csv', ud: 'ud_adp_2026-04-16.csv' },
+            { label: 'Apr 17', date: '2026-04-17', era: 'pre',  dk: 'dk_adp_2026-04-17.csv', ud: 'ud_adp_2026-04-17.csv' },
+            { label: 'Apr 18', date: '2026-04-18', era: 'pre',  dk: 'dk_adp_2026-04-18.csv', ud: 'ud_adp_2026-04-18.csv' },
+            { label: 'Apr 19', date: '2026-04-19', era: 'pre',  dk: 'dk_adp_2026-04-19.csv', ud: 'ud_adp_2026-04-19.csv' },
+            { label: 'Apr 20', date: '2026-04-20', era: 'pre',  dk: 'dk_adp_2026-04-20.csv', ud: 'ud_adp_2026-04-20.csv' },
+            { label: 'Apr 21', date: '2026-04-21', era: 'pre',  dk: 'dk_adp_2026-04-21.csv', ud: 'ud_adp_2026-04-21.csv' },
+            { label: 'Apr 22', date: '2026-04-22', era: 'pre',  dk: 'dk_adp_2026-04-22.csv', ud: 'ud_adp_2026-04-22.csv' },
+            { label: 'Apr 27', date: '2026-04-27', era: 'post', dk: 'dk_adp_2026-04-27.csv', ud: 'ud_adp_2026-04-27.csv' },
+            { label: 'Apr 28', date: '2026-04-28', era: 'post', dk: 'dk_adp_2026-04-28.csv', ud: 'ud_adp_2026-04-28.csv' },
+            { label: 'Apr 29', date: '2026-04-29', era: 'post', dk: 'dk_adp_2026-04-29.csv', ud: 'ud_adp_2026-04-29.csv' },
+            { label: 'Apr 30', date: '2026-04-30', era: 'post', dk: 'dk_adp_2026-04-30.csv', ud: 'ud_adp_2026-04-30.csv' },
+            { label: 'May 1',  date: '2026-05-01', era: 'post', dk: 'dk_adp_2026-05-01.csv', ud: 'ud_adp_2026-05-01.csv' },
+            { label: 'May 2',  date: '2026-05-02', era: 'post', dk: 'dk_adp_2026-05-02.csv', ud: 'ud_adp_2026-05-02.csv' },
+            { label: 'May 3',  date: '2026-05-03', era: 'post', dk: 'dk_adp_2026-05-03.csv', ud: 'ud_adp_2026-05-03.csv' },
+            { label: 'May 4',  date: '2026-05-04', era: 'post', dk: 'dk_adp_2026-05-04.csv', ud: 'ud_adp_2026-05-04.csv' },
+            { label: 'May 5',  date: '2026-05-05', era: 'post', dk: 'dk_adp_2026-05-05.csv', ud: 'ud_adp_2026-05-05.csv' },
+            { label: 'May 6',  date: '2026-05-06', era: 'post', dk: 'dk_adp_2026-05-06.csv', ud: 'ud_adp_2026-05-06.csv' },
         ];
         const COLORS = ['#4a9eff','#e74c3c','#2ecc71','#f39c12','#9b59b6','#1abc9c','#e67e22','#e91e63','#00bcd4','#8bc34a'];
 
@@ -503,6 +535,18 @@
         let adpChart = null;
         let selectedPlayers = [];
         let moversPosFilter = 'ALL';
+        let eraFilter = 'all'; // 'pre' | 'post' | 'all'
+
+        function getActiveSnapshots() {
+            if (!historyData) return [];
+            if (eraFilter === 'all') return historyData.snapshots;
+            if (eraFilter === 'pre') return historyData.snapshots.filter(s => s.era === 'pre');
+            // Post-draft: anchor with the last pre-draft snapshot so movers/chart have something
+            // to compare against until multiple post-draft snapshots exist.
+            const post = historyData.snapshots.filter(s => s.era === 'post');
+            const lastPre = [...historyData.snapshots].reverse().find(s => s.era === 'pre');
+            return lastPre ? [lastPre, ...post] : post;
+        }
 
         async function loadHistoryData() {
             const snapshots = await Promise.all(SNAPSHOTS.map(async s => {
@@ -525,7 +569,7 @@
                     const adp = parseFloat(r[3]);
                     udMap[normalizeName(name)] = { name, pos: r[6] || '', adp: isNaN(adp) ? null : adp };
                 }
-                return { label: s.label, dkMap, udMap };
+                return { label: s.label, date: s.date, era: s.era, dkMap, udMap };
             }));
 
             const allKeys = new Set();
@@ -545,10 +589,29 @@
         }
 
         function renderMovers() {
-            const { snapshots, playerIndex } = historyData;
-            const prev = snapshots[snapshots.length - 2];
+            const { playerIndex } = historyData;
+            const snapshots = getActiveSnapshots();
+            const movers = ['rec-rising-dk','rec-falling-dk','rec-rising-ud','rec-falling-ud'];
+            if (snapshots.length < 2) {
+                document.getElementById('movers-subtitle').textContent = snapshots.length === 0
+                    ? 'No snapshots in this era yet.'
+                    : `Only one snapshot available (${snapshots[0].label}) — need at least 2 to compute movers.`;
+                movers.forEach(id => document.getElementById(id).innerHTML = '');
+                return;
+            }
             const curr = snapshots[snapshots.length - 1];
-            document.getElementById('movers-subtitle').textContent = `Comparing ${prev.label} to ${curr.label}`;
+            // Parse date as local to avoid timezone shifting
+            const parseDate = str => { const [y,m,d] = str.split('-'); return new Date(y, m-1, d); };
+            const currDate = parseDate(curr.date);
+            const weekAgo = new Date(currDate);
+            weekAgo.setDate(weekAgo.getDate() - 7);
+            // Pick snapshot closest to 7 days ago, excluding curr
+            const prev = snapshots.slice(0, -1).reduce((best, s) => {
+                const thisDiff = Math.abs(parseDate(s.date) - weekAgo);
+                const bestDiff = Math.abs(parseDate(best.date) - weekAgo);
+                return thisDiff < bestDiff ? s : best;
+            }, snapshots[0]);
+            document.getElementById('movers-subtitle').textContent = `Comparing ${prev.label} to ${curr.label} (closest available to 7 days)`;
             document.getElementById('title-rising-dk').textContent = `Rising on DraftKings (${prev.label} → ${curr.label})`;
             document.getElementById('title-falling-dk').textContent = `Falling on DraftKings (${prev.label} → ${curr.label})`;
             document.getElementById('title-rising-ud').textContent = `Rising on Underdog (${prev.label} → ${curr.label})`;
@@ -581,7 +644,8 @@
         }
 
         function renderChart() {
-            const { snapshots, playerIndex } = historyData;
+            const { playerIndex } = historyData;
+            const snapshots = getActiveSnapshots();
             const labels = snapshots.map(s => s.label);
             const canvas = document.getElementById('adp-chart');
             const empty = document.getElementById('chart-empty');
@@ -679,6 +743,16 @@
                 btn.classList.add('active');
                 moversPosFilter = btn.dataset.pos;
                 renderMovers();
+            });
+        });
+
+        document.querySelectorAll('.era-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.era-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                eraFilter = btn.dataset.era;
+                renderMovers();
+                renderChart();
             });
         });
 
